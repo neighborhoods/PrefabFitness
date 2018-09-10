@@ -26,3 +26,13 @@ git clone git@github.com:neighborhoods/prefab.git
 cd prefab
 git checkout 4.x
 ```
+
+### Helpful
+
+```bash
+cd Mason
+docker-compose exec prefab_examples bash
+cd Example1
+rm composer.lock; composer clear-cache; composer update neighborhoods/prefab --prefer-source
+exit
+```
