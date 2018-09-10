@@ -17,7 +17,7 @@ COPY . $PROJECT_DIR
 
 # Copy xdebug configration for remote debugging
 COPY docker/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
-COPY docker/bwilson.ini /usr/local/etc/php/conf.d/bwilson.ini
+COPY docker/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
 
 RUN bash docker/build.sh \
     --xdebug ${INSTALL_XDEBUG} \
