@@ -6,7 +6,6 @@
   "keywords": [
     "prefab"
   ],
-  "minimum-stability": "dev",
   "repositories": [
     {
       "type": "composer",
@@ -18,7 +17,7 @@
   },
   "require": {
     "php": "^7.2",
-    "neighborhoods/prefab": "dev-master"
+    "neighborhoods/prefab": "dev-4.x"
   },
   "autoload": {
     "psr-4": {
