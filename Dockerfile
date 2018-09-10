@@ -1,4 +1,4 @@
-FROM neighborhoods/php-fpm-phalcon:php7.1_phalcon3.2
+FROM neighborhoods/php-fpm-phalcon:php7.2_phalcon3.4
 ARG PROJECT_NAME=prefab_examples
 
 # COMPOSER_TOKEN can also be passed via file using COMPOSER_GITHUB_TOKEN
