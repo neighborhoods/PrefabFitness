@@ -17,7 +17,7 @@
   },
   "require": {
     "php": "^7.2",
-    "neighborhoods/prefab": "dev-4.x"
+    "neighborhoods/prefab": "4.x-dev"
   },
   "autoload": {
     "psr-4": {
