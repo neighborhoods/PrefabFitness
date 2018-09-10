@@ -18,11 +18,11 @@
   },
   "require": {
     "php": "^7.2",
-    "neighborhoods/prefab": "dev-4.x"
+    "neighborhoods/prefab": "dev-master"
   },
   "autoload": {
     "psr-4": {
-      "Neighborhoods\\PrefabExample\\": "src"
+      "Neighborhoods\\PrefabExamples\\": "src"
     }
   }
 }
