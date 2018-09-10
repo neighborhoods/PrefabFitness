@@ -1,0 +1,28 @@
+{
+  "name": "neighborhoods/prefab-example",
+  "description": "Example usage of the prefab project.",
+  "type": "project",
+  "license": "proprietary",
+  "keywords": [
+    "prefab"
+  ],
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://satis.neighborhoods.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.2",
+    "neighborhoods/prefab": "dev-4.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neighborhoods\\PrefabExample\\": "src"
+    }
+  }
+}
