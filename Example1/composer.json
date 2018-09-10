@@ -1,6 +1,6 @@
 {
-  "name": "neighborhoods/prefab-examples",
-  "description": "Example usage of the prefab project.",
+  "name": "neighborhoods/prefab-examples-example1",
+  "description": "Example 1 usage of the prefab project.",
   "type": "project",
   "license": "proprietary",
   "keywords": [
@@ -22,10 +22,9 @@
   },
   "autoload": {
     "psr-4": {
-      "Neighborhoods\\PrefabExamples\\": "src",
       "Neighborhoods\\PrefabExamplesExample1\\": [
-        "Example1/src",
-        "Example1/fab"
+        "fab",
+        "src"
       ]
     }
   }
