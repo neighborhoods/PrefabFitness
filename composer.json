@@ -22,7 +22,11 @@
   },
   "autoload": {
     "psr-4": {
-      "Neighborhoods\\PrefabExamples\\": "src"
+      "Neighborhoods\\PrefabExamples\\": "src",
+      "Neighborhoods\\PrefabExamplesExample1\\": [
+        "Example1/src",
+        "Example1/fab"
+      ]
     }
   }
 }
