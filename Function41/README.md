@@ -4,7 +4,7 @@
 git clone git@github.com:neighborhoods/PrefabExamples.git
 ```
 
-### Compose Example1
+### Compose Function41
 **\*WARNING - as of this writing you must use VCS explicitly as a repository in composer.json for composer to fallback to the filesystem when adding new files to `prefab`\***
 ```bash
 cd Mason
@@ -27,12 +27,12 @@ cd prefab
 git checkout 4.x
 ```
 
-### Helpful
+### Clear everything composer
 
 ```bash
 cd Mason
 docker-compose exec prefab_examples bash
 cd Example1
-rm composer.lock; composer clear-cache; composer update neighborhoods/prefab --prefer-source
+rm -rf vendor; rm composer.lock; composer clear-cache
 exit
 ```
