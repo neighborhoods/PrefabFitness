@@ -1,15 +1,15 @@
 {
-  "name": "neighborhoods/prefab-examples-example1",
-  "description": "Example 1 usage of the prefab project.",
-  "type": "project",
+  "name": "neighborhoods/prefab-examples-jakeservice",
+  "description": "JakeService usage of the prefab project.",
+  "type": "library",
   "license": "proprietary",
   "keywords": [
     "prefab"
   ],
   "repositories": [
     {
-      "type": "composer",
-      "url": "https://satis.neighborhoods.com"
+      "type": "vcs",
+      "url": "git@github.com:neighborhoods/prefab.git"
     }
   ],
   "config": {
