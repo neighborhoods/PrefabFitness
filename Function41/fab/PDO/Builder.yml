@@ -1,0 +1,21 @@
+parameters:
+  Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.database_user_name: '%env(DATABASE_USERNAME)%'
+  Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.database_password: '%env(DATABASE_PASSWORD)%'
+  Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.database_adapter: '%env(DATABASE_ADAPTER)%'
+  Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.database_host: '%env(DATABASE_HOST)%'
+  Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.database_name: '%env(DATABASE_NAME)%'
+  Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.options:
+    !php/const \PDO::ATTR_PERSISTENT: true
+    !php/const \PDO::ATTR_EMULATE_PREPARES: false
+services:
+  Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\PDO\Builder
+    shared: false
+    calls:
+    - [setOpcacheDNS, ['@Neighborhoods\PrefabExamplesFunction41\Opcache\DNSInterface']]
+    - [setOptions, ['%Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.options%']]
+    - [setPassword, ['%Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.database_password%']]
+    - [setUserName, ['%Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.database_user_name%']]
+    - [setDatabaseAdapter, ['%Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.database_adapter%']]
+    - [setDatabaseHost, ['%Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.database_host%']]
+    - [setDatabaseName, ['%Neighborhoods\PrefabExamplesFunction41\PDO\BuilderInterface.database_name%']]

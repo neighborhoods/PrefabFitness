@@ -1,0 +1,6 @@
+services:
+  Neighborhoods\PrefabExamplesFunction41\NewRelic\TransactionNameMiddlewareInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\NewRelic\TransactionNameMiddleware
+    arguments: [Neighborhoods\PrefabExamplesFunction41\NewRelic\TransactionNameMiddleware\Factory, '@service_container', Neighborhoods\PrefabExamplesFunction41\NewRelic\TransactionNameMiddlewareInterface]
+    factory: [JSoumelidis\SymfonyDI\Config\CallbackFactory, createFactoryCallback]
+    public: true

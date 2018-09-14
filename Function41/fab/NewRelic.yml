@@ -1,0 +1,4 @@
+services:
+  Neighborhoods\PrefabExamplesFunction41\NewRelicInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\NewRelic
+    shared: false

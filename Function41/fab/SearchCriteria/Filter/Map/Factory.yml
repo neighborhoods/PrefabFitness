@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Filter\Map\FactoryInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Filter\Map\Factory
+    calls:
+    - [setSearchCriteriaFilterMap, ['@Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Filter\MapInterface']]
