@@ -17,11 +17,12 @@
   },
   "require": {
     "php": "^7.2",
-    "neighborhoods/prefab": "4.x-dev"
+    "neighborhoods/prefab": "jake-fab-dev",
+    "symfony/dependency-injection": "^4.1"
   },
   "autoload": {
     "psr-4": {
-      "Neighborhoods\\PrefabExamplesJakeService\\": [
+      "Neighborhoods\\PrefabFitnessJakeService\\": [
         "fab",
         "src"
       ]

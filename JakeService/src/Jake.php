@@ -1,15 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Neighborhoods\PrefabExamplesJakeService;
+namespace Neighborhoods\PrefabFitnessJakeService;
 
 /**
- * @prefab dao
  * Class Jake
- * @package Neighborhoods\PrefabExamplesJakeService
+ * @neighborhoods\prefab:DAO
  */
+
 class Jake implements JakeInterface
 {
+
     protected $age;
     protected $height;
     protected $coding_abilities;
