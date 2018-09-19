@@ -1,10 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Neighborhoods\PrefabExamplesJakeService;
+namespace Neighborhoods\PrefabExamplesJakeService\MV1;
 
 /**
- * @prefab dao
+ * @neighborhoods\prefab:DAO
+ *
  * Class Jake
  * @package Neighborhoods\PrefabExamplesJakeService
  */
