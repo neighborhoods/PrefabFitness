@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\Group\Builder\FactoryInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\Group\Builder\Factory
+    calls:
+    - [setMV1AreaAmenityGroupBuilder, ['@Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\Group\BuilderInterface']]

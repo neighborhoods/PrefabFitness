@@ -1,0 +1,9 @@
+services:
+  Neighborhoods\PrefabExamplesFunction41\SearchCriteriaInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\SearchCriteria
+    calls:
+    - [setSearchCriteriaFilterMap, ['@Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Filter\MapInterface']]
+    - [setSearchCriteriaSortOrderMap, ['@Neighborhoods\PrefabExamplesFunction41\SearchCriteria\SortOrder\MapInterface']]
+    - [setSearchCriteriaVisitorMap, ['@Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Visitor\MapInterface']]
+    - [addVisitor, ['@Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\VisitorInterface']]
+    shared: false

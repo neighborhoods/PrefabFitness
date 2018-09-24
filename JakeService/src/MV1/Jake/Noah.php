@@ -1,16 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Neighborhoods\PrefabFitnessJakeService;
+namespace Neighborhoods\PrefabExamplesJakeService\MV1\Jake;
 
 /**
- * Class Jake
  * @neighborhoods\prefab:DAO
  */
-
-class Jake implements JakeInterface
+class Noah implements NoahInterface
 {
-
     protected $age;
     protected $height;
     protected $coding_abilities;
@@ -23,7 +20,7 @@ class Jake implements JakeInterface
         return $this->age;
     }
 
-    public function setAge($age) : JakeInterface
+    public function setAge($age) : NoahInterface
     {
         if ($this->age !== null) {
             throw new \LogicException('Jake age is already set.');
@@ -40,7 +37,7 @@ class Jake implements JakeInterface
         return $this->height;
     }
 
-    public function setHeight($height) : JakeInterface
+    public function setHeight($height) : NoahInterface
     {
         if ($this->height !== null) {
             throw new \LogicException('Jake height is already set.');
@@ -57,7 +54,7 @@ class Jake implements JakeInterface
         return $this->coding_abilities;
     }
 
-    public function setCodingAbilities($coding_abilities) : JakeInterface
+    public function setCodingAbilities($coding_abilities) : NoahInterface
     {
         if ($this->coding_abilities !== null) {
             throw new \LogicException('Jake coding_abilities is already set.');

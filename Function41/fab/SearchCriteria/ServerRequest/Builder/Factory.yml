@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabExamplesFunction41\SearchCriteria\ServerRequest\Builder\FactoryInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\SearchCriteria\ServerRequest\Builder\Factory
+    calls:
+    - [setSearchCriteriaServerRequestBuilder, ['@Neighborhoods\PrefabExamplesFunction41\SearchCriteria\ServerRequest\BuilderInterface']]

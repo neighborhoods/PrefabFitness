@@ -1,0 +1,4 @@
+services:
+  Neighborhoods\PrefabExamplesFunction41\Doctrine\DBAL\Connection\Decorator\MapInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\Doctrine\DBAL\Connection\Decorator\Map
+    shared: false

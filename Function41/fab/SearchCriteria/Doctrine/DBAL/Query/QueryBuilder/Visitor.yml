@@ -1,0 +1,6 @@
+services:
+  Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\VisitorInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Visitor
+    calls:
+    - [setDoctrineDBALConnectionDecoratorRepository, ['@Neighborhoods\PrefabExamplesFunction41\Doctrine\DBAL\Connection\Decorator\RepositoryInterface']]
+    shared: false

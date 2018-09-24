@@ -1,0 +1,6 @@
+services:
+  Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\Group\Map\Repository\HandlerInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\Group\Map\Repository\Handler
+    calls:
+    - [setMV1AreaAmenityGroupMapRepository, ['@Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\Group\Map\RepositoryInterface']]
+    - [setSearchCriteriaServerRequestBuilderFactory, ['@Neighborhoods\PrefabExamplesFunction41\SearchCriteria\ServerRequest\Builder\FactoryInterface']]

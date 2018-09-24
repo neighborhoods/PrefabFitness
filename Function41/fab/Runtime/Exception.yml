@@ -1,0 +1,4 @@
+services:
+  Neighborhoods\PrefabExamplesFunction41\Runtime\ExceptionInterface:
+    class: Neighborhoods\PrefabExamplesFunction41\Runtime\Exception
+    shared: false
