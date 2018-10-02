@@ -1,5 +1,5 @@
 {
-  "name": "neighborhoods/prefab-examples-function44",
+  "name": "neighborhoods/prefab-fitness-function44",
   "description": "Fitness function 4 for prefab 4.x.",
   "type": "library",
   "license": "proprietary",
@@ -43,7 +43,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Neighborhoods\\PrefabExamplesFunction44\\": [
+      "Neighborhoods\\PrefabFitnessFunction44\\": [
         "src",
         "fab"
       ]
