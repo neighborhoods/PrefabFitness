@@ -1,0 +1,7 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="MV1\FFP\Area\Amenity\Group\Map\RepositoryTest">
+            <file>test/MV1/FFP/Area/Amenity/Group/Map/RepositoryTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
