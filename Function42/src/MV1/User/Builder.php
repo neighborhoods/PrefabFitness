@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Neighborhoods\UserService\MV1\User;
+namespace Neighborhoods\Function42\MV1\User;
 
 use Neighborhoods\UserService\MV1\UserInterface;
 

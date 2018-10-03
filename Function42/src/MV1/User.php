@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Neighborhoods\UserService\MV1;
+namespace Neighborhoods\Function42\MV1;
 
 /**
  * @neighborhoods\prefab:DAO
