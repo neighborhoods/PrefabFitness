@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace Neighborhoods\PrefabFitnessFunction44\MV1;
 
+/**
+ * @neighborhoods\prefab:DAO
+ */
 class DAO implements DAOInterface
 {
     /** @var int */

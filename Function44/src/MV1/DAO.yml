@@ -1,0 +1,4 @@
+services:
+  Neighborhoods\PrefabFitnessFunction44\MV1\DAOInterface:
+    class: Neighborhoods\PrefabFitnessFunction44\MV1\DAO
+    shared: false

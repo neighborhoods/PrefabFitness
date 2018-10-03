@@ -1,0 +1,6 @@
+!.gitignore
+.idea
+vendor/*
+!vendor/neighborhoods
+vendor/neighborhoods/*
+!vendor/neighborhoods/prefab
