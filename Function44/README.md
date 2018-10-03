@@ -14,9 +14,9 @@ composer update
 * Enable "For generated sources" for `vendor/neighborhoods/prefab/src` as `Neighborhoods\Prefab`
 ![PHPStorm Project View](README/images/phpstorm-project-view.png)
 * Additionally, in order to get the Version Control Tool Window to appear it may be necessary to choose
- * View
- * Tool Windows
- * Version Control
+    * View
+    * Tool Windows
+    * Version Control
 
 ## Running Prefab
 1. Execute
