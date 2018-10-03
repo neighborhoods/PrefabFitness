@@ -8,8 +8,8 @@
   ],
   "repositories": [
     {
-      "type": "composer",
-      "url": "https://satis.neighborhoods.com"
+      "type": "vcs",
+      "url": "git@github.com:neighborhoods/prefab.git"
     }
   ],
   "config": {
@@ -17,11 +17,11 @@
   },
   "require": {
     "php": "^7.2",
-    "neighborhoods/prefab": "master-dev"
+    "neighborhoods/prefab": "4.x-dev"
   },
   "autoload": {
     "psr-4": {
-      "Neighborhoods\\PrefabExamplesFunction42\\": [
+      "Neighborhoods\\Function42\\": [
         "src",
         "fab"
       ]
