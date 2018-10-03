@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Neighborhoods\Function42\MV1\User;
 
-use Neighborhoods\UserService\MV1\UserInterface;
+use Neighborhoods\Function42\MV1\UserInterface;
 
 class Builder implements BuilderInterface
 {

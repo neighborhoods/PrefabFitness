@@ -5,14 +5,14 @@ namespace Neighborhoods\Function42\MV1\User;
 class Repository implements RepositoryInterface
 {
 
-    use \Neighborhoods\UserService\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Builder\Factory\AwareTrait, \Neighborhoods\UserService\MV1\User\Map\Builder\Factory\AwareTrait, \Neighborhoods\UserService\MV1\User\Map\Factory\AwareTrait, \Neighborhoods\UserService\Doctrine\DBAL\Connection\Decorator\Repository\AwareTrait;
+    use \Neighborhoods\Function42\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Builder\Factory\AwareTrait, \Neighborhoods\Function42\MV1\User\Map\Builder\Factory\AwareTrait, \Neighborhoods\Function42\MV1\User\Map\Factory\AwareTrait, \Neighborhoods\Function42\Doctrine\DBAL\Connection\Decorator\Repository\AwareTrait;
 
-    public function createBuilder() : \Neighborhoods\UserService\MV1\User\Map\BuilderInterface
+    public function createBuilder() : \Neighborhoods\Function42\MV1\User\Map\BuilderInterface
     {
         return $this->getMV1UserMapBuilderFactory()->create();
     }
 
-    public function get(\Neighborhoods\UserService\SearchCriteriaInterface $searchCriteria) : \Neighborhoods\UserService\MV1\User\MapInterface
+    public function get(\Neighborhoods\Function42\SearchCriteriaInterface $searchCriteria) : \Neighborhoods\Function42\MV1\User\MapInterface
     {
         $records = [
             [
@@ -30,7 +30,7 @@ class Repository implements RepositoryInterface
         return $this->createBuilder()->setRecords($records)->build();
     }
 
-    public function save(\Neighborhoods\UserService\MV1\User\MapInterface $map) : \Neighborhoods\UserService\MV1\User\RepositoryInterface
+    public function save(\Neighborhoods\Function42\MV1\User\MapInterface $map) : \Neighborhoods\Function42\MV1\User\RepositoryInterface
     {
         // Use Doctrine Connection Decorator Repository to save your DAO to storage.
 
