@@ -10,6 +10,10 @@
     {
       "type": "vcs",
       "url": "git@github.com:neighborhoods/prefab.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:neighborhoods/scaffolding.git"
     }
   ],
   "config": {
@@ -36,7 +40,7 @@
     "zendframework/zend-stdlib": "^3.1"
   },
   "require-dev": {
-    "phpunit/phpunit": "^7.0.1",
+    "phpunit/phpunit": "^7.3",
     "roave/security-advisories": "dev-master",
     "zendframework/zend-expressive-tooling": "^1.0",
     "zfcampus/zf-development-mode": "^3.1"

@@ -29,7 +29,7 @@ class Repository implements RepositoryInterface
         $queryBuilder->from(GroupInterface::TABLE_NAME)->select('amenities_details');
         $records = $queryBuilder->execute()->fetchAll();
 
-        return $map = $this->createBuilder()->setRecords($records)->build();
+        return $this->createBuilder()->setRecords($records)->build();
     }
 
     public function save(MapInterface $map): RepositoryInterface
