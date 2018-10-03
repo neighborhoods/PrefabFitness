@@ -1,5 +1,5 @@
 FROM neighborhoods/php-fpm-phalcon:php7.2_phalcon3.4
-ARG PROJECT_NAME=prefab_examples
+ARG PROJECT_NAME=prefab_fitness
 
 # COMPOSER_TOKEN can also be passed via file using COMPOSER_GITHUB_TOKEN
 ARG COMPOSER_TOKEN=placeholder_token_you_must_replace_via_args_in_compose_file
