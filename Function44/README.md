@@ -1,5 +1,8 @@
 # Fitness Function 44
 
+## Proves
+One simple `DAO` is correctly fabricated.
+
 ## Setup
 ```bash
 cd Function44
