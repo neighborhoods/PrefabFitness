@@ -21,7 +21,8 @@ composer update
     * View
     * Tool Windows
     * Version Control
-    * You should now see 
+    * You should now see
+    
 ![PHPStorm Project View](README/images/phpstorm-version-control-tool-window-view.png)
 
 ## Running Prefab
