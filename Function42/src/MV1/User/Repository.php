@@ -16,7 +16,7 @@ class Repository implements RepositoryInterface
     {
         $records = [
             [
-                'id' => '123',
+                'id' => 123,
                 'key' => 'abcdef123',
                 'fname' => 'John',
                 'lname' => 'Doe',

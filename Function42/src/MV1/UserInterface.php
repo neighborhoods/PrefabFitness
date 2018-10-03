@@ -3,10 +3,7 @@
 namespace Neighborhoods\Function42\MV1;
 
 
-/**
- * @neighborhoods\prefab:DAO
- */
-interface UserInterface
+interface UserInterface extends \JsonSerializable
 {
     public function getId() : int;
 

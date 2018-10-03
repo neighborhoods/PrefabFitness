@@ -23,6 +23,7 @@ class Builder implements BuilderInterface
             ->setPhone($this->record['phone'] ?? '')
             ->setVerified($this->record['verified']);
 
+        $test = json_encode($user);
         return $user;
     }
 
