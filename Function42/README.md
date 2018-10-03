@@ -29,7 +29,7 @@ This will generate all necessary components to respond to the http route:
 
 Note: For the purposes of this example, the repository has been overriden to respond with an example record instead of going to the database, so any request to prefab_fitness.local.nhds/mv1/users/ with valid search criteria will respond with the same record
 
-####Setting up PrefabFitness to pull Prefab from the Github repository instead of Satis
+#### Setting up PrefabFitness to pull Prefab from the Github repository instead of Satis
 ##### Compose Function42
 **\*WARNING - as of this writing you must use VCS explicitly as a repository in composer.json for composer to fallback to the filesystem when adding new files to `prefab`\***
 ```bash
