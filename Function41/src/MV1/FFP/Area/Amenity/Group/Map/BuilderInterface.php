@@ -11,5 +11,5 @@ interface BuilderInterface
 
     public function setRecords(array $records): BuilderInterface;
 
-    public function setMV1AreaAmenityGroupMapFactory(FactoryInterface $mV1AreaAmenityGroupMapFactory): BuilderInterface;
+    public function setMV1AreaAmenityGroupMapFactory(FactoryInterface $mV1AreaAmenityGroupMapFactory);
 }
