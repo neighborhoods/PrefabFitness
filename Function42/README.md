@@ -12,7 +12,7 @@ git clone git@github.com:neighborhoods/PrefabFitness.git
 cd PrefabFitness
 git checkout 4.x
 cd ../Mason
-docker-compose build prefab_fitness && docker-compose up -d
+docker-compose build prefab_fitness nginx && docker-compose up -d
 docker-compose exec prefab_fitness bash
 ```
 
