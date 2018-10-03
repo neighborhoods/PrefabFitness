@@ -1,6 +1,6 @@
 # Fitness Function 44
 
-## Proves
+## Proven Use Case
 One simple `DAO` is correctly fabricated.
 
 ## Setup
