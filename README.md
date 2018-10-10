@@ -8,7 +8,8 @@ Y is an incrementing integer to distinguish the functions.
 Each FunctionXY directory contains a specific README.md for that function.
 
 ## Setting up Xdebug for PrefabFitness
-1. Determine the xdebug port for this project. You can find this by running, from your host, 
+1. Determine the xdebug port for this project. You can find this in `docker/xdebug.ini` under `xdebug.remote_port`. 
+You can also validate that by running, from your host, 
 `docker-compose exec prefab_fitness php -i | grep xdebug.remote_port`. Set this value in PHPStorm Preferences under 
 `Languages & Framworks > PHP > Debug` in the field "Debug Port".
 2. In PHPStorm Preferences, under `Languages & Framworks > PHP > Servers`, add a new entry where Name and Host are 
