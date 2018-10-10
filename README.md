@@ -1,9 +1,9 @@
 # PrefabFitness
 The fitness functions for [`prefab`](https://github.com/neighborhoods/prefab).
 
-The FunctionXY directories are example starting points that prefab should be able to build from.
-X corresponds to the major version of prefab for this function. 
-Y is an incrementing integer to distinguish the functions.
+The `FunctionXY` directories are example starting points that prefab should be able to build from.
+`X` corresponds to the major version of prefab for this function. 
+`Y` is an incrementing integer to distinguish the functions.
 
 Each FunctionXY directory contains a specific README.md for that function.
 
