@@ -5,7 +5,7 @@ The `FunctionXY` directories are example starting points that prefab should be a
 `X` corresponds to the major version of prefab for this function. 
 `Y` is an incrementing integer to distinguish the functions.
 
-Each FunctionXY directory contains a specific README.md for that function.
+Each `FunctionXY` directory contains a specific `README.md` for that function.
 
 ## Setting up Xdebug for PrefabFitness
 1. Determine the xdebug port for this project. You can find this in `docker/xdebug.ini` under `xdebug.remote_port`. 
