@@ -1,6 +1,6 @@
 <?php
 
-namespace Neighborhoods\Function42\MV1\User;
+namespace Neighborhoods\Function42\MV1\User\Map;
 
 class Repository implements RepositoryInterface
 {
@@ -14,6 +14,7 @@ class Repository implements RepositoryInterface
 
     public function get(\Neighborhoods\Function42\SearchCriteriaInterface $searchCriteria) : \Neighborhoods\Function42\MV1\User\MapInterface
     {
+        // Note: We are returning an array here because prefab fitness doesn't have a databse backing it
         $records = [
             [
                 'id' => 123,
@@ -30,7 +31,7 @@ class Repository implements RepositoryInterface
         return $this->createBuilder()->setRecords($records)->build();
     }
 
-    public function save(\Neighborhoods\Function42\MV1\User\MapInterface $map) : \Neighborhoods\Function42\MV1\User\RepositoryInterface
+    public function save(\Neighborhoods\Function42\MV1\User\MapInterface $map) : \Neighborhoods\Function42\MV1\User\Map\RepositoryInterface
     {
         // Use Doctrine Connection Decorator Repository to save your DAO to storage.
 
