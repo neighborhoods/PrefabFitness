@@ -1,0 +1,4 @@
+services:
+  Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\Filter\MapInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\Filter\Map
+    shared: false

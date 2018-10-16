@@ -1,4 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesFunction41\SearchCriteria\SortOrder\MapInterface:
-    class: Neighborhoods\PrefabExamplesFunction41\SearchCriteria\SortOrder\Map
-    shared: false

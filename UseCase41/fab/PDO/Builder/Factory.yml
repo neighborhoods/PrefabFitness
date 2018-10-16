@@ -1,0 +1,7 @@
+services:
+  Neighborhoods\PrefabExamplesUseCase41\PDO\Builder\FactoryInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\PDO\Builder\Factory
+    public: false
+    shared: true
+    calls:
+      - [setPDOBuilder, ['@Neighborhoods\PrefabExamplesUseCase41\PDO\BuilderInterface']]

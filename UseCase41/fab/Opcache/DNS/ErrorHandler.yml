@@ -1,0 +1,4 @@
+services:
+  Neighborhoods\PrefabExamplesUseCase41\Opcache\DNS\ErrorHandlerInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\Opcache\DNS\ErrorHandler
+    shared: false

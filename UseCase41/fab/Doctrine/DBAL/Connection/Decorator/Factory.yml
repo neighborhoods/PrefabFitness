@@ -1,0 +1,7 @@
+services:
+  Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\FactoryInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\Factory
+    public: false
+    shared: true
+    calls:
+      - [setDoctrineDBALConnectionDecorator, ['@Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\DecoratorInterface']]

@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\Filter\FactoryInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\Filter\Factory
+    calls:
+    - [setSearchCriteriaFilter, ['@Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\FilterInterface']]

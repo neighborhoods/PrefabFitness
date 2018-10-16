@@ -1,0 +1,4 @@
+services:
+  Neighborhoods\PrefabExamplesUseCase41\MV1\FFP\Area\Amenity\GroupInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\MV1\FFP\Area\Amenity\Group
+    shared: false
