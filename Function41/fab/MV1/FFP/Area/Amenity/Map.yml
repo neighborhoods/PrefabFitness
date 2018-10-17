@@ -1,4 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\MapInterface:
-    class: Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\Map
-    shared: false

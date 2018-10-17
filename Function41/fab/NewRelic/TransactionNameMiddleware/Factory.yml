@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesFunction41\NewRelic\TransactionNameMiddleware\FactoryInterface:
-    class: Neighborhoods\PrefabExamplesFunction41\NewRelic\TransactionNameMiddleware\Factory
-    calls:
-    - [setNewRelicTransactionNameMiddleware, ['@Neighborhoods\PrefabExamplesFunction41\NewRelic\TransactionNameMiddlewareInterface']]

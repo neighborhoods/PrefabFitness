@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesFunction41\SearchCriteria\FactoryInterface:
-    class: Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Factory
-    calls:
-    - [setSearchCriteria, ['@Neighborhoods\PrefabExamplesFunction41\SearchCriteriaInterface']]

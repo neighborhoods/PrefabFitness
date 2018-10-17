@@ -1,7 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesFunction41\Doctrine\DBAL\Connection\DecoratorInterface:
-    class: Neighborhoods\PrefabExamplesFunction41\Doctrine\DBAL\Connection\Decorator
-    public: false
-    shared: false
-    calls:
-      - [setPDOBuilderFactory, ['@Neighborhoods\PrefabExamplesFunction41\PDO\Builder\FactoryInterface']]

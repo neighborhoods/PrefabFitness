@@ -1,7 +1,7 @@
 {
   "name": "neighborhoods/prefab-examples-function41",
   "description": "Example 1 usage of the prefab project.",
-  "type": "library",
+  "type": "project",
   "license": "proprietary",
   "keywords": [
     "prefab"
@@ -10,10 +10,6 @@
     {
       "type": "vcs",
       "url": "git@github.com:neighborhoods/prefab.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:neighborhoods/scaffolding.git"
     }
   ],
   "config": {
@@ -21,35 +17,13 @@
   },
   "require": {
     "php": "^7.2",
-    "neighborhoods/prefab": "4.x-dev",
-    "doctrine/dbal": "^2.7",
-    "jsoumelidis/zend-sf-di-config": "^0.3",
-    "symfony/config": "^4.0",
-    "symfony/dependency-injection": "^4.0",
-    "symfony/expression-language": "^4.0",
-    "symfony/filesystem": "^4.0",
-    "symfony/finder": "^4.0",
-    "symfony/yaml": "^4.0",
-    "zendframework/zend-component-installer": "^2.1.1",
-    "zendframework/zend-config-aggregator": "^1.0",
-    "zendframework/zend-diactoros": "^1.7.1",
-    "zendframework/zend-expressive": "^3.0.1",
-    "zendframework/zend-expressive-fastroute": "^3.0",
-    "zendframework/zend-expressive-helpers": "^5.0",
-    "zendframework/zend-problem-details": "^1.0",
-    "zendframework/zend-stdlib": "^3.1"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^7.3",
-    "roave/security-advisories": "dev-master",
-    "zendframework/zend-expressive-tooling": "^1.0",
-    "zfcampus/zf-development-mode": "^3.1"
+    "neighborhoods/prefab": "4.0.0-beta"
   },
   "autoload": {
     "psr-4": {
       "Neighborhoods\\PrefabExamplesFunction41\\": [
-        "fab",
-        "src"
+        "src",
+        "fab"
       ]
     }
   }

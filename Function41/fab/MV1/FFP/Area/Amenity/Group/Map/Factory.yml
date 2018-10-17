@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\Group\Map\FactoryInterface:
-    class: Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\Group\Map\Factory
-    calls:
-    - [setMV1AreaAmenityGroupMap, ['@Neighborhoods\PrefabExamplesFunction41\MV1\FFP\Area\Amenity\Group\MapInterface']]
