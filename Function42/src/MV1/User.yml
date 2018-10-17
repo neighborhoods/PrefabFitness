@@ -1,0 +1,3 @@
+services:
+  Neighborhoods\Function42\MV1\UserInterface:
+    class: Neighborhoods\Function42\MV1\User

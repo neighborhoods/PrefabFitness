@@ -1,0 +1,30 @@
+{
+  "name": "neighborhoods/prefab-fitness-function42",
+  "description": "Example of generating machinary for a User DAO.",
+  "type": "project",
+  "license": "proprietary",
+  "keywords": [
+    "prefab"
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:neighborhoods/prefab.git"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.2",
+    "neighborhoods/prefab": "4.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neighborhoods\\Function42\\": [
+        "src",
+        "fab"
+      ]
+    }
+  }
+}
