@@ -12,7 +12,7 @@ Each `UseCaseXY` directory contains a specific `README.md` for that use case.
 Use Case | README| Description
 -----|------|------
 UseCase 41 | [README](UseCase41/README.md) | <ul><li> Singular Root Nested `DAO`s</li> <li>Plural Root Nested `DAO`s</li><li> Subset `DAO`s</li> <li>Superset `DAO`s</li></ul>
-UseCase 42 | (UseCase42/README.md) | Single root User `DAO`. Simplest code generation example
+UseCase 42 | [README](UseCase42/README.md) | Single root User `DAO`. Simplest code generation example
 UseCase 43 | [README](UseCase43/README.md) | Triple nested `DAO`s
 
 #### Running Prefab 
