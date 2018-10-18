@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesFunction41\Redis\MapInterface:
-    class: Neighborhoods\PrefabExamplesFunction41\Redis\Map
-    public: false
-    shared: false

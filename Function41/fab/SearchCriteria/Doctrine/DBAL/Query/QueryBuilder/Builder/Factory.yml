@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Builder\FactoryInterface:
-    class: Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Builder\Factory
-    calls:
-    - [setSearchCriteriaDoctrineDBALQueryQueryBuilderBuilder, ['@Neighborhoods\PrefabExamplesFunction41\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\BuilderInterface']]

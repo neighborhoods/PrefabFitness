@@ -1,0 +1,8 @@
+services:
+  Neighborhoods\PrefabExamplesUseCase41\Redis\RepositoryInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\Redis\Repository
+    public: false
+    shared: true
+    calls:
+      - [setRedisFactory, ['@Neighborhoods\PrefabExamplesUseCase41\Redis\FactoryInterface']]
+      - [setRedisMap, ['@Neighborhoods\PrefabExamplesUseCase41\Redis\MapInterface']]

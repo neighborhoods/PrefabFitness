@@ -1,0 +1,12 @@
+parameters:
+  Neighborhoods\PrefabExamplesUseCase41\Redis\FactoryInterface.redis_port: '%env(REDIS_PORT)%'
+  Neighborhoods\PrefabExamplesUseCase41\Redis\FactoryInterface.redis_host: '%env(REDIS_HOST)%'
+services:
+  Neighborhoods\PrefabExamplesUseCase41\Redis\FactoryInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\Redis\Factory
+    public: false
+    shared: true
+    calls:
+      - [addOption, [!php/const \Redis::OPT_READ_TIMEOUT, '-1']]
+      - [setHost, ['%Neighborhoods\PrefabExamplesUseCase41\Redis\FactoryInterface.redis_host%']]
+      - [setPort, ['%Neighborhoods\PrefabExamplesUseCase41\Redis\FactoryInterface.redis_port%']]
