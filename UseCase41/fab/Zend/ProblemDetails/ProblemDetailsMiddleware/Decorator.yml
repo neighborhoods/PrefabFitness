@@ -1,0 +1,7 @@
+services:
+  Neighborhoods\PrefabExamplesUseCase41\Zend\ProblemDetails\ProblemDetailsMiddleware\DecoratorInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\Zend\ProblemDetails\ProblemDetailsMiddleware\Decorator
+    decorates: Zend\ProblemDetails\ProblemDetailsMiddleware
+    calls:
+    - [setZendProblemDetailsProblemDetailsMiddleware, ['@Neighborhoods\PrefabExamplesUseCase41\Zend\ProblemDetails\ProblemDetailsMiddleware\DecoratorInterface.inner']]
+    - [attachListener, ['@Neighborhoods\PrefabExamplesUseCase41\Zend\ProblemDetails\ProblemDetailsMiddleware\NewRelic\ListenerInterface']]

@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\SortOrder\FactoryInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\SortOrder\Factory
+    calls:
+    - [setSearchCriteriaSortOrder, ['@Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\SortOrderInterface']]

@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\Map\FactoryInterface:
+    class: Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\Map\Factory
+    calls:
+    - [setDoctrineDBALConnectionDecoratorMap, ['@Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\MapInterface']]
