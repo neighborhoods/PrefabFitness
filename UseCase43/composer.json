@@ -6,10 +6,24 @@
   "keywords": [
     "prefab"
   ],
+  "scripts": {
+    "post-update-cmd": [
+      "vendor/bin/prefab",
+      "vendor/bin/bakery"
+    ],
+    "post-install-cmd": [
+      "vendor/bin/prefab",
+      "vendor/bin/bakery"
+    ]
+  },
   "repositories": [
     {
       "type": "vcs",
       "url": "git@github.com:neighborhoods/prefab.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:neighborhoods/Bakery.git"
     }
   ],
   "config": {
@@ -18,6 +32,7 @@
   "require": {
     "php": "^7.2",
     "neighborhoods/prefab": "4.x-dev",
+    "neighborhoods/bakery": "dev-master",
     "symfony/dependency-injection": "^4.1"
   },
   "autoload": {
