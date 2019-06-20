@@ -1,0 +1,27 @@
+dao:
+  table_name: mv1_quotations
+  identity_field: id
+  http_route: /mv1/quotations
+  http_verbs:
+   - get
+   - post
+   - put
+   - patch
+   - delete
+  properties:
+    id:
+      php_type: int
+      database_column_name: id
+      nullable: false
+    quotation:
+      php_type: string
+      database_column_name: quotation
+      nullable: false
+    author_first_name:
+      php_type: string
+      database_column_name: author_first_name
+      nullable: true
+    author_last_name:
+      php_type: string
+      database_column_name: author_last_name
+      nullable: true

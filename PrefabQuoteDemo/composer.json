@@ -1,0 +1,56 @@
+{
+  "name": "neighborhoods/PrefabQuoteDemo",
+  "description": "Prefab quotation demo. 'Hello World!' - Anonymous",
+  "type": "project",
+  "license": "proprietary",
+  "keywords": [
+    "prefab"
+  ],
+  "scripts": {
+    "post-update-cmd": [
+      "vendor/bin/prefab",
+      "@composer dump-autoload -a",
+      "bin/prebake.php",
+      "vendor/bin/bakery"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:neighborhoods/prefab.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:neighborhoods/Bakery.git"
+    },
+    {
+      "type": "composer",
+      "url": "https://satis.neighborhoods.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.2",
+    "neighborhoods/prefab": "^5.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neighborhoods\\PrefabQuoteDemo\\": [
+        "src",
+        "fab"
+      ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Neighborhoods\\PrefabQuoteDemo\\": [
+        "src/",
+        "test-fab/"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
