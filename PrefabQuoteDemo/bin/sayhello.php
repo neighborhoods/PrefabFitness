@@ -23,7 +23,7 @@ function getContainer() : HelloWorldContainer
     return $containerBuilder->build();
 }
 
-function sayHelloToTheWorld(HelloWorldContainer $container)
+function sayHelloToTheWorld(HelloWorldContainer $container) : void
 {
     $quoteRecord = [
         QuotationInterface::PROP_ID => 1234,
