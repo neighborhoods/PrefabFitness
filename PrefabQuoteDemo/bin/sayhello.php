@@ -8,26 +8,36 @@ error_reporting(E_ALL);
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use HelloWorldContainer;
+use Neighborhoods\PrefabQuoteDemo\mv1\Quotation;
 use Neighborhoods\PrefabQuoteDemo\mv1\QuotationInterface;
+use Neighborhoods\PrefabQuoteDemo\Prefab5\Protean\Container\Builder;
 
-$builderFactoryClassName = \Neighborhoods\PrefabQuoteDemo\mv1\Quotation\Builder\FactoryInterface::class;
+function getContainer() : HelloWorldContainer
+{
+    $containerBuilder = new Builder();
+    $containerBuilder->setContainerName('HelloWorldContainer');
+    $containerBuilder->registerServiceAsPublic(Quotation\Builder\FactoryInterface::class);
+    $containerBuilder->getFilesystemProperties()->setRootDirectoryPath(dirname(__DIR__ . '/../../'));
+    $containerBuilder->buildZendExpressive();
+    return $containerBuilder->build();
+}
 
-$containerBuilder = new \Neighborhoods\PrefabQuoteDemo\Prefab5\Protean\Container\Builder();
-$containerBuilder->setContainerName('HelloWorldContainer');
-$containerBuilder->registerServiceAsPublic($builderFactoryClassName);
-$containerBuilder->getFilesystemProperties()->setRootDirectoryPath(dirname(__DIR__ . '/../../'));
-$containerBuilder->buildZendExpressive();
-$container = $containerBuilder->build();
+function sayHelloToTheWorld(HelloWorldContainer $container)
+{
+    $quoteRecord = [
+        QuotationInterface::PROP_ID => 1234,
+        QuotationInterface::PROP_QUOTATION => 'Hello world!',
+        QuotationInterface::PROP_AUTHOR_FIRST_NAME => 'Anonymous'
+    ];
 
-$quoteRecord = [
-    QuotationInterface::PROP_ID => 1234,
-    QuotationInterface::PROP_QUOTATION => 'Hello world!',
-    QuotationInterface::PROP_AUTHOR_FIRST_NAME => 'Anonymous'
-];
+    $builderFactory = $container->get(Quotation\Builder\FactoryInterface::class);
+    $builder = $builderFactory->create();
+    $builder->setRecord($quoteRecord);
+    $quotationObject = $builder->build();
 
-$builderFactory = $container->get($builderFactoryClassName);
-$builder = $builderFactory->create();
-$builder->setRecord($quoteRecord);
-$quotationObject = $builder->build();
+    echo sprintf('"%s" - %s' . PHP_EOL, $quotationObject->getQuotation(), $quotationObject->getAuthorFirstName());
+}
 
-echo sprintf('"%s" - %s' . PHP_EOL, $quotationObject->getQuotation(), $quotationObject->getAuthorFirstName());
+$container = getContainer();
+sayHelloToTheWorld($container);
