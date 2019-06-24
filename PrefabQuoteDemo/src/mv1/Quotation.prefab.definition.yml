@@ -2,12 +2,7 @@ dao:
   table_name: mv1_quotations
   identity_field: id
   http_route: /mv1/quotations
-  http_verbs:
-   - get
-   - post
-   - put
-   - patch
-   - delete
+  supporting_actor_group: collection
   properties:
     id:
       php_type: int
