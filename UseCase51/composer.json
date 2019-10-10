@@ -1,0 +1,48 @@
+{
+  "name": "neighborhoods/prefab-fitness-use-case-51",
+  "description": "A standard Prefab use case.",
+  "type": "project",
+  "keywords": [
+    "prefab"
+  ],
+  "scripts": {
+    "post-update-cmd": [
+      "vendor/bin/prefab",
+      "@composer dump-autoload -a"
+    ],
+    "post-install-cmd": [
+      "vendor/bin/prefab",
+      "@composer dump-autoload -a"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://satis.neighborhoods.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "neighborhoods/prefab": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neighborhoods\\PrefabFitnessUseCase51\\": [
+        "src",
+        "fab"
+      ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Neighborhoods\\PrefabFitnessUseCase51\\": [
+        "src/",
+        "test-fab/"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
