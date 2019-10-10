@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\Visitor\Map\FactoryInterface:
-    class: Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\Visitor\Map\Factory
-    calls:
-    - [setSearchCriteriaVisitorMap, ['@Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\Visitor\MapInterface']]

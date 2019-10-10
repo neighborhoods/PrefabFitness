@@ -1,4 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesUseCase41\Runtime\ExceptionInterface:
-    class: Neighborhoods\PrefabExamplesUseCase41\Runtime\Exception
-    shared: false
