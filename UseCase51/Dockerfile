@@ -7,6 +7,10 @@ RUN apt-get install -y libpq-dev \
 RUN ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/local/include/
 RUN docker-php-ext-configure gmp
 RUN docker-php-ext-install gmp
+RUN pecl install -o -f redis \
+&&  rm -rf /tmp/pear \
+&&  docker-php-ext-enable redis
+
 ARG PROJECT_NAME=use_case_51
 
 ARG INSTALL_XDEBUG=true
