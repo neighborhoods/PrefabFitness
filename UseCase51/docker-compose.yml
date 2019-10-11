@@ -19,7 +19,7 @@ services:
       build:
         context: .
         args:
-        - INSTALL_XDEBUG=false
+        - INSTALL_XDEBUG=true
         - COMPOSER_INSTALL=false
       volumes_from:
       - applications
