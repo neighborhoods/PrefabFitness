@@ -25,7 +25,9 @@
     "sort-packages": true
   },
   "require": {
-    "neighborhoods/prefab": "^5.0"
+    "fzaninotto/faker": "^1.8",
+    "neighborhoods/prefab": "^5.0",
+    "robmorgan/phinx": "^0.11.1"
   },
   "autoload": {
     "psr-4": {
