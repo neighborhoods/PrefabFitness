@@ -1,0 +1,60 @@
+dao:
+  name: Listing
+  table_name: listings
+  http_route: /mv1/listing/{searchCriteria:}
+  http_verbs:
+    - get
+  properties:
+    id:
+      data_type: int
+      record_key: id
+      nullable: false
+    street_address:
+      data_type: string
+      record_key: street_address
+      nullable: false
+    city:
+      data_type: string
+      record_key: city
+      nullable: false
+    state:
+      data_type: string
+      record_key: state
+      nullable: false
+    postal_code:
+      data_type: string
+      record_key: postal_code
+      nullable: false
+    latitude:
+      data_type: float
+      record_key: latitude
+      nullable: true
+    longitude:
+      data_type: float
+      record_key: longitude
+      nullable: true
+    bedrooms:
+      data_type: int
+      record_key: bedrooms
+      nullable: false
+    bathrooms:
+      data_type: int
+      record_key: bathrooms
+      nullable: false
+    list_price:
+      data_type: int
+      record_key: list_price
+      nullable: false
+    year_built:
+      data_type: int
+      record_key: year_built
+      nullable: false
+    sq_ft:
+      data_type: int
+      record_key: sq_ft
+      nullable: false
+    parking_spaces:
+      data_type: int
+      record_key: parking_spaces
+      nullable: false
+
