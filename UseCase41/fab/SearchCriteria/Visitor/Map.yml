@@ -1,4 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\Visitor\MapInterface:
-    class: Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\Visitor\Map
-    shared: false

@@ -1,7 +1,0 @@
-services:
-  Neighborhoods\PrefabExamplesUseCase41\MV1\FFP\Area\Amenity\Group\Map\RepositoryInterface:
-    class: Neighborhoods\PrefabExamplesUseCase41\MV1\FFP\Area\Amenity\Group\Map\Repository
-    calls:
-    - [setDoctrineDBALConnectionDecoratorRepository, ['@Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\RepositoryInterface']]
-    - [setSearchCriteriaDoctrineDBALQueryQueryBuilderBuilderFactory, ['@Neighborhoods\PrefabExamplesUseCase41\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Builder\FactoryInterface']]
-    - [setMV1AreaAmenityGroupMapBuilderFactory, ['@Neighborhoods\PrefabExamplesUseCase41\MV1\FFP\Area\Amenity\Group\Map\Builder\FactoryInterface']]

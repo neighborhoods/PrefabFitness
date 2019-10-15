@@ -1,9 +1,0 @@
-parameters:
-  Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\RepositoryInterface.id_core: !php/const \Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\DecoratorInterface::ID_CORE
-services:
-  Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\RepositoryInterface:
-    class: Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\Repository
-    calls:
-      - [setDoctrineDBALConnectionDecoratorMap, ['@Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\MapInterface']]
-      - [setDoctrineDBALConnectionDecoratorFactory, ['@Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\FactoryInterface']]
-      - [create, ['%Neighborhoods\PrefabExamplesUseCase41\Doctrine\DBAL\Connection\Decorator\RepositoryInterface.id_core%']]
