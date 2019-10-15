@@ -1,0 +1,108 @@
+version: '2'
+
+services:
+
+### Mount Applications ######################################
+
+    applications:
+        image: tianon/true
+        volumes:
+            - .:/var/www/html/prefabfitness/use_case_51.neighborhoods.com
+    pgsql_data:
+      image: tianon/true
+      volumes:
+          - ./docker/data/pgsql:/docker-entrypoint-initdb.d
+
+### Prefab Examples Container (php-fpm) #########################
+
+    prefab_fitness:
+      build:
+        context: .
+        args:
+        - INSTALL_XDEBUG=true
+        - COMPOSER_INSTALL=false
+      volumes_from:
+      - applications
+      expose:
+      - "9095"
+      environment:
+          SITE_ENVIRONMENT: Local
+          DATABASE_ADAPTER: "pgsql"
+          DATABASE_HOST: pgsql
+          DATABASE_USERNAME: nhds
+          DATABASE_PASSWORD: nhds2016
+          DATABASE_NAME: "user_service"
+          DATABASE_PORT: 5432
+          REDIS_HOST: "redis"
+          REDIS_PORT: "6379"
+          PHP_IDE_CONFIG: "serverName=prefab_fitness.neighborhoods.com"
+      extra_hosts:
+      - "dockerhost:10.200.10.1"
+      dns: 10.200.10.1
+
+### nginx Container #######################################
+
+    nginx:
+        build:
+            context: ./docker/nginx
+        volumes_from:
+            - applications
+        volumes:
+            - ./logs/nginx/:/var/log/nginx
+            - ./nginx/sites/:/etc/nginx/sites-available
+        ports:
+            - "80:80"
+            - "443:443"
+        links:
+            - prefab_fitness
+        extra_hosts:
+            - "dockerhost:10.200.10.1"
+        dns: 10.200.10.1
+
+### PostgreSQL PostGis Container ############################
+
+    pgsql:
+        build: ./docker/postgres
+        volumes:
+            - postgres:/var/lib/postgresql/data
+        volumes_from:
+            - pgsql_data
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_DB: nhds
+            POSTGRES_USER: nhds
+            POSTGRES_PASSWORD: nhds2016
+
+### Redis Container #########################################
+
+    redis:
+        build: ./docker/redis
+        volumes:
+            - redis:/data
+        ports:
+            - "6379:6379"
+
+### DNS Setup ###############################################
+
+    dnsmasq:
+        build: ./docker/dnsmasq
+        ports:
+            - "53:53/udp"
+            - "53:53"
+        cap_add:
+            - NET_ADMIN
+
+### Volumes Setup ###########################################
+
+volumes:
+    postgres:
+        driver: "local"
+    redis:
+        driver: "local"
+
+### Network Setup ###########################################
+
+networks:
+  default:
+    driver: bridge
