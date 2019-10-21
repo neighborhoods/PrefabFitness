@@ -9,6 +9,7 @@ dao:
       data_type: int
       record_key: id
       nullable: false
+      created_on_insert: true
     street_address:
       data_type: string
       record_key: street_address
