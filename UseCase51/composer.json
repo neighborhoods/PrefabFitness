@@ -5,16 +5,6 @@
   "keywords": [
     "prefab"
   ],
-  "scripts": {
-    "post-update-cmd": [
-      "vendor/bin/prefab",
-      "@composer dump-autoload -a"
-    ],
-    "post-install-cmd": [
-      "vendor/bin/prefab",
-      "@composer dump-autoload -a"
-    ]
-  },
   "repositories": [
     {
       "type": "composer",
