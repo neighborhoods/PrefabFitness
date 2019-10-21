@@ -1,9 +1,16 @@
 FROM php:7.3-fpm
 RUN apt-get update -y && apt-get install -y unzip procps
 RUN apt-get install -y libgmp-dev
+RUN apt-get install -y libpq-dev \
+    && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
+    && docker-php-ext-install pdo pdo_pgsql pgsql
 RUN ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/local/include/
 RUN docker-php-ext-configure gmp
 RUN docker-php-ext-install gmp
+RUN pecl install -o -f redis \
+    &&  rm -rf /tmp/pear \
+    &&  docker-php-ext-enable redis
+
 ARG PROJECT_NAME=use_case_51
 
 ARG INSTALL_XDEBUG=true

@@ -13,7 +13,7 @@ services:
       volumes:
           - ./docker/data/pgsql:/docker-entrypoint-initdb.d
 
-### Prefab Examples Container (php-fpm) #########################
+### Prefab Fitness Container (php-fpm) #########################
 
     prefab_fitness:
       build:
@@ -27,15 +27,15 @@ services:
       - "9095"
       environment:
           SITE_ENVIRONMENT: Local
-          DATABASE_ADAPTER: "pgsql"
+          DATABASE_ADAPTER: pgsql
           DATABASE_HOST: pgsql
           DATABASE_USERNAME: nhds
           DATABASE_PASSWORD: nhds2016
-          DATABASE_NAME: "user_service"
+          DATABASE_NAME: prefab_fitness
           DATABASE_PORT: 5432
-          REDIS_HOST: "redis"
-          REDIS_PORT: "6379"
-          PHP_IDE_CONFIG: "serverName=prefab_fitness.neighborhoods.com"
+          REDIS_HOST: redis
+          REDIS_PORT: 6379
+          PHP_IDE_CONFIG: serverName=prefab_fitness.neighborhoods.com
       extra_hosts:
       - "dockerhost:10.200.10.1"
       dns: 10.200.10.1

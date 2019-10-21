@@ -2,7 +2,7 @@ FROM nginx:alpine
 
 ADD nginx.conf /etc/nginx/
 
-ARG PHP_UPSTREAM=php-fpm-mlsmanager
+ARG PHP_UPSTREAM=php-fpm-prefab_fitness
 
 RUN apk update \
     && apk upgrade \
