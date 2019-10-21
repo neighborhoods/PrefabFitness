@@ -6,42 +6,10 @@
   "environments": {
     "default_migration_table": "phinxlog",
     "default_database": "%%PHINX_DEFAULT_ENVIRONMENT%%",
-    "production": {
-      "adapter": "pgsql",
-      "host": "%%PHINX_DBHOST%%",
-      "name": "%%PHINX_DBNAME%%",
-      "user": "%%PHINX_DBUSER%%",
-      "pass": "%%PHINX_DBPASS%%",
-      "charset": "utf8"
-    },
-    "development": {
-      "adapter": "pgsql",
-      "host": "%%PHINX_DBHOST%%",
-      "name": "%%PHINX_DBNAME%%",
-      "user": "%%PHINX_DBUSER%%",
-      "pass": "%%PHINX_DBPASS%%",
-      "charset": "utf8"
-    },
     "local": {
       "adapter": "pgsql",
       "host": "%%PHINX_DBHOST%%",
       "name": "%%PHINX_DBNAME%%",
-      "user": "%%PHINX_DBUSER%%",
-      "pass": "%%PHINX_DBPASS%%",
-      "charset": "utf8"
-    },
-    "testing": {
-      "adapter": "pgsql",
-      "host": "%%PHINX_DBHOST%%",
-      "name": "%%PHINX_DBNAME%%",
-      "user": "%%PHINX_DBUSER%%",
-      "pass": "%%PHINX_DBPASS%%",
-      "charset": "utf8"
-    },
-    "integration-test" : {
-      "adapter": "pgsql",
-      "host": "%%PHINX_DBHOST%%",
-      "name": "notification_service_test",
       "user": "%%PHINX_DBUSER%%",
       "pass": "%%PHINX_DBPASS%%",
       "charset": "utf8"

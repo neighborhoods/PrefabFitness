@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-const DATABASE_NAME = 'prefab_fitness';
+$databaseName = getenv('DATABASE_NAME');
 
 $connection = new \Doctrine\DBAL\Connection(
     [
-        'name' => DATABASE_NAME,
+        'name' => $databaseName,
         'adapter' => getenv('DATABASE_ADAPTER'),
         'host' => getenv('DATABASE_HOST'),
         'user' => getenv('DATABASE_USERNAME'),
@@ -23,13 +23,13 @@ $testDbExistsQuery = $connection->prepare(
     'SELECT datname FROM pg_database WHERE datname = :datname'
 );
 
-$testDbExistsQuery->execute([DATABASE_NAME]);
+$testDbExistsQuery->execute([$databaseName]);
 $exists = $testDbExistsQuery->fetch();
 
 if (empty($exists)) {
-    print_r('Creating database ' . DATABASE_NAME . PHP_EOL);
+    print_r('Creating database ' . $databaseName . PHP_EOL);
     $connection->exec(
-        "CREATE DATABASE " . DATABASE_NAME
+        "CREATE DATABASE " . $databaseName
     );
 
     exit(0);
