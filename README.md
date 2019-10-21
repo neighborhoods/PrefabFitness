@@ -7,7 +7,7 @@ The `UseCaseXY` directories are example starting points that Prefab should be ab
 
 Each `UseCaseXY` directory contains a specific `README.md` for that use case.
 
-###Table of Contents
+### Table of Contents
 
 Use Case | README| Description
 -----|------|------|
