@@ -15,6 +15,14 @@
     "prebake" : [
       "vendor/bin/prefab",
       "composer dump-autoload"
+    ],
+    "cleanup" : [
+      "rm -rf fab/",
+      "rm -rf config/",
+      "rm -f phpcs.xml.dist",
+      "rm -rf Logs/",
+      "rm -rf public/",
+      "rm -f src/MV1/ListingCoordinates.prefab.definition.yml"
     ]
   },
   "config": {
