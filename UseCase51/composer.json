@@ -11,6 +11,12 @@
       "url": "https://satis.neighborhoods.com"
     }
   ],
+  "scripts": {
+    "prebake" : [
+      "vendor/bin/prefab",
+      "composer dump-autoload"
+    ]
+  },
   "config": {
     "sort-packages": true
   },
