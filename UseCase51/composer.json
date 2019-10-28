@@ -12,7 +12,7 @@
     }
   ],
   "scripts": {
-    "prebake" : [
+    "prefab" : [
       "vendor/bin/prefab",
       "composer dump-autoload"
     ],
