@@ -22,6 +22,7 @@
       "rm -f phpcs.xml.dist",
       "rm -rf Logs/",
       "rm -rf public/",
+      "rm -rf test-fab/",
       "rm -f src/MV1/ListingCoordinates.prefab.definition.yml"
     ]
   },
