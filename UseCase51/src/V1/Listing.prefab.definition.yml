@@ -1,7 +1,7 @@
 dao:
   name: Listing
   table_name: listings
-  http_route: /mv1/listing/{searchCriteria:}
+  http_route: /v1/listing/{searchCriteria:}
   http_verbs:
     - get
   properties:
