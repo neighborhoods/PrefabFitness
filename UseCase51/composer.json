@@ -23,7 +23,7 @@
       "rm -rf Logs/",
       "rm -rf public/",
       "rm -rf test-fab/",
-      "rm -f src/MV1/ListingCoordinates.prefab.definition.yml"
+      "rm -f src/V1/ListingCoordinates.prefab.definition.yml"
     ]
   },
   "config": {
