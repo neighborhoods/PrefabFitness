@@ -5,27 +5,6 @@
   "keywords": [
     "prefab"
   ],
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://satis.neighborhoods.com"
-    }
-  ],
-  "scripts": {
-    "prefab" : [
-      "vendor/bin/prefab",
-      "composer dump-autoload"
-    ],
-    "cleanup" : [
-      "rm -rf fab/",
-      "rm -rf config/",
-      "rm -f phpcs.xml.dist",
-      "rm -rf Logs/",
-      "rm -rf public/",
-      "rm -rf test-fab/",
-      "rm -f src/V1/ListingCoordinates.prefab.definition.yml"
-    ]
-  },
   "config": {
     "sort-packages": true
   },
