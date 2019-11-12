@@ -6,7 +6,8 @@ This use case demonstrates how to generate an HTTP endpoint using Prefab. Notice
 #### Getting Started
 1. Navigate to the root of UseCase51 on your terminal
 1. `composer install` to install the project dependencies
-1. `docker-compose build && docker-compose up -d` to build and start the nginx, Postgres, Redis, and PHP containers
+1. Run `./expose-nhds-tld`. This allows us to make local requests to the `nhds` top level domain in the test request below.
+1. `docker-compose build && docker-compose up -d` to build and start the Nginx, Postgres, Redis, and PHP containers
 1. `docker-compose exec prefab_fitness ./bin/database_setup.sh` to create the prefab_fitness database, run migrations, and seed the database with mock data
 1. `./vendor/bin/prefab` to run Prefab and generate the Listing HTTP endpoint
     - Note to Docker For Mac users: This command can be run either inside the container or on the host machine. However, filesystem access using Docker For Mac is often extremely slow. Since Prefab writes a large number of files to disk, running Prefab inside the Docker container can take a significant amount of time. Therefore, it is recommended you run Prefab on the host machine.

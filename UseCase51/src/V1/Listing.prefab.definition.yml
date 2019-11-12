@@ -1,7 +1,8 @@
 dao:
   name: Listing
   table_name: listings
-  http_route: /mv1/listing/{searchCriteria:}
+  identity_field: id
+  http_route: /v1/listing/{searchCriteria:}
   http_verbs:
     - get
   properties:
@@ -58,4 +59,3 @@ dao:
       data_type: int
       record_key: parking_spaces
       nullable: false
-
