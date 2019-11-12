@@ -1,0 +1,8 @@
+#! /bin/bash
+sudo ifconfig lo0 alias 10.200.10.1/24
+sudo mkdir -p /etc/resolver
+sudo tee /etc/resolver/nhds >/dev/null <<EOF
+nameserver 10.200.10.1
+domain nhds
+search_order 1
+EOF
