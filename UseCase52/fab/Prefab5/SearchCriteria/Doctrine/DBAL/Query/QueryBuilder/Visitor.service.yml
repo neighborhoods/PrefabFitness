@@ -1,0 +1,6 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\VisitorInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Visitor
+    calls:
+    - [setDoctrineDBALConnectionDecoratorRepository, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\RepositoryInterface']]
+    shared: false

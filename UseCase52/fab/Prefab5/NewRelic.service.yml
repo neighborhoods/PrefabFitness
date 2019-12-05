@@ -1,0 +1,4 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\NewRelicInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\NewRelic
+    shared: false

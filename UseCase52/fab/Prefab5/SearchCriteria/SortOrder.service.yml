@@ -1,0 +1,4 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\SortOrderInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\SortOrder
+    shared: false

@@ -1,0 +1,3 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\LoggerInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Logger

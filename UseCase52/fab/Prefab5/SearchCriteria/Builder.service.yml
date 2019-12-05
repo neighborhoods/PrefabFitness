@@ -1,0 +1,7 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\BuilderInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Builder
+    calls:
+    - [setSearchCriteriaFilterFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Filter\FactoryInterface']]
+    - [setSearchCriteriaSortOrderFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\SortOrder\FactoryInterface']]
+    - [setSearchCriteriaFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\FactoryInterface']]

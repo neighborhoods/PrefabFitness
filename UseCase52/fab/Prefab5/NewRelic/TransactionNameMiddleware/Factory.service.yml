@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\NewRelic\TransactionNameMiddleware\FactoryInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\NewRelic\TransactionNameMiddleware\Factory
+    calls:
+    - [setNewRelicTransactionNameMiddleware, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\NewRelic\TransactionNameMiddlewareInterface']]

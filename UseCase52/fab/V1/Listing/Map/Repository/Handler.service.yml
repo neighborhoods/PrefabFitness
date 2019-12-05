@@ -1,0 +1,8 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\Repository\HandlerInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\Repository\Handler
+    public: false
+    shared: false
+    calls:
+      - [setV1ListingMapRepository, ['@Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\RepositoryInterface']]
+      - [setSearchCriteriaServerRequestBuilderFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\ServerRequest\Builder\FactoryInterface']]

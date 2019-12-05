@@ -1,0 +1,9 @@
+services:
+  Neighborhoods\Prefab\BuildConfiguration\BuilderInterface:
+    class: Neighborhoods\Prefab\BuildConfiguration\Builder
+    calls:
+    - [setBuildConfigurationFactory, ['@Neighborhoods\Prefab\BuildConfiguration\FactoryInterface']]
+    - [setDaoPropertyBuilderFactory, ['@Neighborhoods\Prefab\DaoProperty\Builder\FactoryInterface']]
+    - [setDaoPropertyMapFactory, ['@Neighborhoods\Prefab\DaoProperty\Map\FactoryInterface']]
+    - [setConstantFactory, ['@Neighborhoods\Prefab\Constant\FactoryInterface']]
+    - [setConstantMapFactory, ['@Neighborhoods\Prefab\Constant\Map\FactoryInterface']]

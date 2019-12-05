@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\SortOrder\FactoryInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\SortOrder\Factory
+    calls:
+    - [setSearchCriteriaSortOrder, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\SortOrderInterface']]

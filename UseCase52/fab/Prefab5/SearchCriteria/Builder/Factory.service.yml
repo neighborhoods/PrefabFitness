@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Builder\FactoryInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Builder\Factory
+    calls:
+    - [setSearchCriteriaBuilder, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\BuilderInterface']]

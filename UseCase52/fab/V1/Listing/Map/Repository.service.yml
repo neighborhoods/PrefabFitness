@@ -1,0 +1,9 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\RepositoryInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\Repository
+    public: false
+    shared: true
+    calls:
+      - [setDoctrineDBALConnectionDecoratorRepository, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\RepositoryInterface']]
+      - [setV1ListingMapBuilderFactory, ['@Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\Builder\FactoryInterface']]
+      - [setSearchCriteriaDoctrineDBALQueryQueryBuilderBuilderFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Builder\FactoryInterface']]

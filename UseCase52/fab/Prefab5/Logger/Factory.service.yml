@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Logger\FactoryInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Logger\Factory
+    calls:
+      - [setPrefab5Logger, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\LoggerInterface']]

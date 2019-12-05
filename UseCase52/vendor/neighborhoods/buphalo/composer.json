@@ -1,0 +1,43 @@
+{
+  "name": "neighborhoods/buphalo",
+  "type": "library",
+  "description": "Fabricates patterns.",
+  "license": "proprietary",
+  "keywords": [
+    "Buphalo",
+    "Code Generation"
+  ],
+  "bin": [
+    "bin/v1/buphalo",
+    "bin/v1/makephar",
+    "bin/v1/upgrade"
+  ],
+  "authors": [
+    {
+      "name": "Brad Wilson",
+      "email": "brad.wilson@neighborhoods.com"
+    },
+    {
+      "name": "Jacques Marcotte",
+      "email": "jacques.marcotte@neighborhoods.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "ext-json": "*",
+    "symfony/config": "^4.2",
+    "symfony/dependency-injection": "^4.2",
+    "symfony/expression-language": "^4.2",
+    "symfony/filesystem": "^4.2",
+    "symfony/finder": "^4.2",
+    "symfony/yaml": "^4.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neighborhoods\\Buphalo\\": [
+        "src",
+        "fab"
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Redis\RepositoryInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Redis\Repository
+    public: false
+    shared: true
+    calls:
+      - [setRedisFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Redis\FactoryInterface']]
+      - [setRedisMap, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Redis\MapInterface']]

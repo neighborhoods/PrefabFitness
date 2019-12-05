@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\V1\Listing\MapInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map
+    public: false
+    shared: false

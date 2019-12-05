@@ -1,0 +1,9 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteriaInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria
+    calls:
+    - [setSearchCriteriaFilterMapFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Filter\Map\FactoryInterface']]
+    - [setSearchCriteriaSortOrderMapFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\SortOrder\Map\FactoryInterface']]
+    - [setSearchCriteriaVisitorMapFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Visitor\Map\FactoryInterface']]
+    - [setSearchCriteriaDoctrineDBALQueryQueryBuilderVisitorFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Visitor\FactoryInterface']]
+    shared: false

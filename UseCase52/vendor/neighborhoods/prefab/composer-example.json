@@ -1,0 +1,44 @@
+{
+  "name": "neighborhoods/PROJECTNAME",
+  "description": "Add a short description of your project here.",
+  "type": "project",
+  "license": "proprietary",
+  "keywords": [
+    "prefab"
+  ],
+  "scripts": {
+    "post-update-cmd": [
+      "vendor/bin/prefab",
+      "@composer dump-autoload -a"
+    ],
+    "post-install-cmd": [
+      "vendor/bin/prefab",
+      "@composer dump-autoload -a"
+    ]
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.0",
+    "neighborhoods/prefab": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neighborhoods\\PROJECTNAME\\": [
+        "src",
+        "fab"
+      ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Neighborhoods\\PROJECTNAME\\": [
+        "src/",
+        "test-fab/"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

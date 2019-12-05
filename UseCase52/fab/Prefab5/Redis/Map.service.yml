@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Redis\MapInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Redis\Map
+    public: false
+    shared: false

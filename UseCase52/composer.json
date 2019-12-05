@@ -1,0 +1,34 @@
+{
+  "name": "neighborhoods/prefab-fitness-use-case-52",
+  "description": "A standard Prefab use case.",
+  "type": "project",
+  "keywords": [
+    "prefab"
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "fzaninotto/faker": "^1.8",
+    "neighborhoods/prefab": "^5.0",
+    "robmorgan/phinx": "^0.11.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neighborhoods\\PrefabFitnessUseCase52\\": [
+        "src",
+        "fab"
+      ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Neighborhoods\\PrefabFitnessUseCase52\\": [
+        "src/",
+        "test-fab/"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

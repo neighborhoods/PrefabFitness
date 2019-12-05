@@ -1,0 +1,7 @@
+services:
+  Neighborhoods\PrefabFitnessUseCase52\V1\Listing\FactoryInterface:
+    class: Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Factory
+    public: false
+    shared: true
+    calls:
+      - [setV1Listing, ['@Neighborhoods\PrefabFitnessUseCase52\V1\ListingInterface']]
