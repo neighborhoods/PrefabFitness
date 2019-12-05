@@ -19,5 +19,5 @@ This project is configured to listen for requests to `use_case_51.local.nhds`. H
 
 ```
 curl -g -X GET \
-   'http://use_case_51.local.nhds/mv1/listing/?searchCriteria[filters][0][glue]=and&searchCriteria[filters][0][field]=id&searchCriteria[filters][0][condition]=lt&searchCriteria[filters][0][values][0]=20'
+   'http://use_case_51.local.nhds/v1/listing/?searchCriteria[filters][0][glue]=and&searchCriteria[filters][0][field]=id&searchCriteria[filters][0][condition]=lt&searchCriteria[filters][0][values][0]=20'
 ```
