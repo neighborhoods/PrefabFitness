@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Zend\ProblemDetails\ProblemDetailsMiddleware\NewRelic\ListenerInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Zend\ProblemDetails\ProblemDetailsMiddleware\NewRelic\Listener
-    calls:
-    - [setNewRelic, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\NewRelicInterface']]

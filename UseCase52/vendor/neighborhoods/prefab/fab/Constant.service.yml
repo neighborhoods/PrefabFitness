@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\Prefab\ConstantInterface:
-    class: Neighborhoods\Prefab\Constant
-    public: false
-    shared: false

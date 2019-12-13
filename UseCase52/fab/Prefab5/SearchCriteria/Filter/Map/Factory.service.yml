@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Filter\Map\FactoryInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Filter\Map\Factory
-    calls:
-    - [setSearchCriteriaFilterMap, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Filter\MapInterface']]

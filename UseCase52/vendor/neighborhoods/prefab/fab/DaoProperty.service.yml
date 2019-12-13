@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\Prefab\DaoPropertyInterface:
-    class: Neighborhoods\Prefab\DaoProperty
-    public: false
-    shared: false

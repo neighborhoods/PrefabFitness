@@ -1,7 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\Builder\FactoryInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\Builder\Factory
-    public: false
-    shared: true
-    calls:
-      - [setV1ListingMapBuilder, ['@Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\BuilderInterface']]

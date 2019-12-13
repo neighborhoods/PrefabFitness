@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\Prefab\DaoProperty\MapInterface:
-    class: Neighborhoods\Prefab\DaoProperty\Map
-    public: false
-    shared: false

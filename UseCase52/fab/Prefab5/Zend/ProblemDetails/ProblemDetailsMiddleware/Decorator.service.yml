@@ -1,7 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Zend\ProblemDetails\ProblemDetailsMiddleware\DecoratorInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Zend\ProblemDetails\ProblemDetailsMiddleware\Decorator
-    decorates: Zend\ProblemDetails\ProblemDetailsMiddleware
-    calls:
-    - [setZendProblemDetailsProblemDetailsMiddleware, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Zend\ProblemDetails\ProblemDetailsMiddleware\DecoratorInterface.inner']]
-    - [attachListener, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Zend\ProblemDetails\ProblemDetailsMiddleware\NewRelic\ListenerInterface']]

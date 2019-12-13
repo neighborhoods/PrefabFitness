@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\Prefab\AnnotationProcessorRecord\StaticContextRecordInterface:
-    class: Neighborhoods\Prefab\AnnotationProcessorRecord\StaticContextRecord
-    public: false
-    shared: false

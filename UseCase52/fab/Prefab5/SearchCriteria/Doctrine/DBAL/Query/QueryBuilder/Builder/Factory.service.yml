@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Builder\FactoryInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Builder\Factory
-    calls:
-    - [setSearchCriteriaDoctrineDBALQueryQueryBuilderBuilder, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\BuilderInterface']]

@@ -1,5 +1,0 @@
-!.gitignore
-.idea
-vendor/*
-fab/*
-.env*

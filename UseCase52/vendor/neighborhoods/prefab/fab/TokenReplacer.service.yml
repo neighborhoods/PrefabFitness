@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\Prefab\TokenReplacerInterface:
-    class: Neighborhoods\Prefab\TokenReplacer
-    public: false
-    shared: false

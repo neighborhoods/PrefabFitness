@@ -1,7 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Opcache\DNSInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Opcache\DNS
-    calls:
-    - [setNewRelic, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\NewRelicInterface']]
-    - [setOpcacheDNSErrorHandler, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Opcache\DNS\ErrorHandlerInterface']]
-    shared: false

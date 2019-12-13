@@ -1,4 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\MapInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\Map
-    shared: false

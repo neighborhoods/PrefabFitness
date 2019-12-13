@@ -1,4 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\FilterInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\SearchCriteria\Filter
-    shared: false

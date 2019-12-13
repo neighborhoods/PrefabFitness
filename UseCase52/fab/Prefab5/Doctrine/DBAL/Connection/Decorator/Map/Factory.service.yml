@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\Map\FactoryInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\Map\Factory
-    calls:
-    - [setDoctrineDBALConnectionDecoratorMap, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\MapInterface']]

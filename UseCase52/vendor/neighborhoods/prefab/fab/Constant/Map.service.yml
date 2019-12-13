@@ -1,5 +1,0 @@
-services:
-  Neighborhoods\Prefab\Constant\MapInterface:
-    class: Neighborhoods\Prefab\Constant\Map
-    public: false
-    shared: false

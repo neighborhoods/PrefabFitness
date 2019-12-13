@@ -1,9 +1,0 @@
-parameters:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\RepositoryInterface.id_core: !php/const \Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\DecoratorInterface::ID_CORE
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\RepositoryInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\Repository
-    calls:
-      - [setDoctrineDBALConnectionDecoratorMap, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\MapInterface']]
-      - [setDoctrineDBALConnectionDecoratorFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\FactoryInterface']]
-      - [create, ['%Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator\RepositoryInterface.id_core%']]

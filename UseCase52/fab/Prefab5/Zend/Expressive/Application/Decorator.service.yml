@@ -1,7 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Zend\Expressive\Application\DecoratorInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Zend\Expressive\Application\Decorator
-    decorates: Zend\Expressive\Application
-    calls:
-    - [setZendExpressiveApplication, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\Zend\Expressive\Application\DecoratorInterface.inner']]
-    - [get, [!php/const \Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\Repository\HandlerInterface::ROUTE_PATH_V1LISTINGS,'@?Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\Repository\HandlerInterface',!php/const \Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map\Repository\HandlerInterface::ROUTE_NAME_V1LISTINGS]]

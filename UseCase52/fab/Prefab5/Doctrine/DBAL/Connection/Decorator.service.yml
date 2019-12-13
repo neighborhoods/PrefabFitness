@@ -1,7 +1,0 @@
-services:
-  Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\DecoratorInterface:
-    class: Neighborhoods\PrefabFitnessUseCase52\Prefab5\Doctrine\DBAL\Connection\Decorator
-    public: false
-    shared: false
-    calls:
-      - [setPDOBuilderFactory, ['@Neighborhoods\PrefabFitnessUseCase52\Prefab5\PDO\Builder\FactoryInterface']]
