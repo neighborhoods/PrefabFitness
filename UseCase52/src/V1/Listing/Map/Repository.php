@@ -3,15 +3,14 @@ declare(strict_types=1);
 
 namespace Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map;
 
-use Neighborhoods\PrefabFitnessUseCase52\V1\ListingInterface;
-
 use Doctrine\DBAL\Connection;
-use Doctrine\DBAL\ParameterType;
 use Doctrine\DBAL\Query\QueryBuilder;
+use Jaeger\Jaeger;
+use Neighborhoods\PrefabFitnessUseCase52\Prefab5;
 use Neighborhoods\PrefabFitnessUseCase52\V1\Listing;
 use Neighborhoods\PrefabFitnessUseCase52\V1\Listing\Map;
 use Neighborhoods\PrefabFitnessUseCase52\V1\Listing\MapInterface;
-use Neighborhoods\PrefabFitnessUseCase52\Prefab5;
+use Neighborhoods\PrefabFitnessUseCase52\V1\ListingInterface;
 
 class Repository implements RepositoryInterface
 {
@@ -20,6 +19,8 @@ class Repository implements RepositoryInterface
     use Prefab5\SearchCriteria\Doctrine\DBAL\Query\QueryBuilder\Builder\Factory\AwareTrait;
 
     protected $connection;
+    /** @var Jaeger */
+    protected $tracer;
 
     protected const JSON_COLUMNS = [
 
@@ -32,6 +33,7 @@ class Repository implements RepositoryInterface
 
     public function get(Prefab5\SearchCriteriaInterface $searchCriteria) : MapInterface
     {
+        $repositorySpan = $this->getTracer()->startActiveSpan('ListingRepository-get');
         $queryBuilderBuilder = $this->getSearchCriteriaDoctrineDBALQueryQueryBuilderBuilderFactory()->create();
         $queryBuilderBuilder->setSearchCriteria($searchCriteria);
         $queryBuilder = $queryBuilderBuilder->build();
@@ -44,6 +46,7 @@ class Repository implements RepositoryInterface
             }
         }
 
+        $repositorySpan->close();
         return $this->createBuilder()->setRecords($records)->build();
     }
 
@@ -66,6 +69,26 @@ class Repository implements RepositoryInterface
             $connection->rollBack();
             throw $e;
         }
+
+        return $this;
+    }
+
+    public function getTracer() : Jaeger
+    {
+        if ($this->tracer === null) {
+            throw new \LogicException('Repository tracer has not been set.');
+        }
+
+        return $this->tracer;
+    }
+
+    public function setTracer(Jaeger $tracer) : RepositoryInterface
+    {
+        if ($this->tracer !== null) {
+            throw new \LogicException('Repository tracer is already set.');
+        }
+
+        $this->tracer = $tracer;
 
         return $this;
     }

@@ -10,6 +10,8 @@
   },
   "require": {
     "fzaninotto/faker": "^1.8",
+    "jukylin/jaeger-php": "^2.0",
+    "opentracing/opentracing": "1.0.0-beta5",
     "neighborhoods/prefab": "^5.0",
     "robmorgan/phinx": "^0.11.1"
   },

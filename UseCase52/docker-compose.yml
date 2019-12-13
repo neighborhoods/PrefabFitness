@@ -59,7 +59,21 @@ services:
             - "dockerhost:10.200.10.1"
         dns: 10.200.10.1
 
-### PostgreSQL PostGis Container ############################
+  ### Jaeger ############################
+    jaeger:
+      image: jaegertracing/all-in-one:1.15
+      environment:
+        COLLECTOR_ZIPKIN_HTTP_PORT: 9411
+      ports:
+        - "5775:5775/udp"
+        - "6831:6831/udp"
+        - "6832:6832/udp"
+        - "5778:5778"
+        - "16686:16686"
+        - "14268:14268"
+        - "9411:9411"
+
+  ### PostgreSQL PostGis Container ############################
 
     pgsql:
         build: ./docker/postgres
