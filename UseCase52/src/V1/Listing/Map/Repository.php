@@ -38,6 +38,7 @@ class Repository implements RepositoryInterface
         $queryBuilderBuilder->setSearchCriteria($searchCriteria);
         $queryBuilder = $queryBuilderBuilder->build();
         $queryBuilder->from(ListingInterface::TABLE_NAME)->select('*');
+        $repositorySpan->getSpan()->setTag('sql.query', $queryBuilder->getSQL());
         $records = $queryBuilder->execute()->fetchAll();
 
         foreach ($records as $key => $record) {
