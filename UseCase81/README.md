@@ -21,3 +21,9 @@ This project is configured to listen for requests to `use_case_81.local.nhds`. H
 curl -g -X GET \
    'http://use_case_81.local.nhds/v1/listing/?searchCriteria[filters][0][glue]=and&searchCriteria[filters][0][field]=id&searchCriteria[filters][0][condition]=lt&searchCriteria[filters][0][values][0]=20'
 ```
+
+You can prime the containers before making the first http request.
+``` bash
+bin/prime_http_containers.php
+```
+You will see the cached container(s) in data/cache.
