@@ -6,7 +6,10 @@
     "prefab"
   ],
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "platform": {
+      "php": "7.3"
+    }
   },
   "require": {
     "fzaninotto/faker": "^1.8",
