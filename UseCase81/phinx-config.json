@@ -1,0 +1,18 @@
+{
+  "paths": {
+    "migrations": "%%PHINX_CONFIG_DIR%%\/database\/migrations",
+    "seeds": "%%PHINX_CONFIG_DIR%%\/database\/seeds"
+  },
+  "environments": {
+    "default_migration_table": "phinxlog",
+    "default_database": "%%PHINX_DEFAULT_ENVIRONMENT%%",
+    "local": {
+      "adapter": "pgsql",
+      "host": "%%PHINX_DBHOST%%",
+      "name": "%%PHINX_DBNAME%%",
+      "user": "%%PHINX_DBUSER%%",
+      "pass": "%%PHINX_DBPASS%%",
+      "charset": "utf8"
+    }
+  }
+}
