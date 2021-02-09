@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b540e5ccdbd7db93e955aed394bff07",
+    "content-hash": "81cac488cf125e183cb4e971e5c21908",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -2617,16 +2617,16 @@
         },
         {
             "name": "neighborhoods/prefab",
-            "version": "dev-feature/dicbc",
+            "version": "8.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neighborhoods/Prefab.git",
-                "reference": "92203176b3f84ffb0994f35cf191f08bdb81ed2a"
+                "reference": "e936a885136967a8af2b24a1d739abe985895b02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neighborhoods/Prefab/zipball/92203176b3f84ffb0994f35cf191f08bdb81ed2a",
-                "reference": "92203176b3f84ffb0994f35cf191f08bdb81ed2a",
+                "url": "https://api.github.com/repos/neighborhoods/Prefab/zipball/e936a885136967a8af2b24a1d739abe985895b02",
+                "reference": "e936a885136967a8af2b24a1d739abe985895b02",
                 "shasum": ""
             },
             "require": {
@@ -2687,9 +2687,9 @@
             "description": "Neighborhoods Prefab builds Protean machinery.",
             "support": {
                 "issues": "https://github.com/neighborhoods/Prefab/issues",
-                "source": "https://github.com/neighborhoods/Prefab/tree/feature/dicbc"
+                "source": "https://github.com/neighborhoods/Prefab/tree/8.x"
             },
-            "time": "2021-01-28T08:55:11+00:00"
+            "time": "2021-02-09T18:43:41+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -4650,5 +4650,8 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.4"
+    },
     "plugin-api-version": "2.0.0"
 }

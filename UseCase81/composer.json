@@ -13,7 +13,7 @@
   },
   "require": {
     "fzaninotto/faker": "^1.8",
-    "neighborhoods/prefab": "dev-feature/dicbc",
+    "neighborhoods/prefab": "8.x-dev",
     "robmorgan/phinx": "^0.11.1"
   },
   "autoload": {
