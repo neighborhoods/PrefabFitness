@@ -1,5 +1,5 @@
 FROM php:7.4-fpm
-RUN apt-get update -y && apt-get install -y unzip procps
+RUN apt-get update -y && apt-get install -y unzip procps git
 RUN apt-get install -y libgmp-dev
 RUN apt-get install -y libpq-dev \
     && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
@@ -10,6 +10,9 @@ RUN docker-php-ext-install gmp
 RUN pecl install -o -f redis \
     &&  rm -rf /tmp/pear \
     &&  docker-php-ext-enable redis
+
+#Add composer
+COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 ARG PROJECT_NAME=use_case_81
 
