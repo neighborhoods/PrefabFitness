@@ -1,0 +1,9 @@
+v1/listing:
+  buildable_directories:
+    - V1
+  welcome_baskets:
+    - Doctrine\DBAL
+    - PDO
+    - Opcache
+    - Zend\Expressive
+    - SearchCriteria
