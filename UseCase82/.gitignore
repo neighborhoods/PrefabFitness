@@ -1,0 +1,9 @@
+/.idea/
+/config/
+/data/
+/public/
+/vendor/
+/fab/
+/test-fab/
+/Logs/
+phpcs.xml.dist
