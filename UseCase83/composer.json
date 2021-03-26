@@ -1,0 +1,35 @@
+{
+  "name": "neighborhoods/prefab-fitness-use-case-83",
+  "description": "A standard Prefab use case.",
+  "type": "project",
+  "keywords": [
+    "prefab"
+  ],
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "require": {
+    "neighborhoods/prefab": "PREF-279-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neighborhoods\\PrefabFitnessUseCase83\\": [
+        "src",
+        "fab"
+      ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Neighborhoods\\PrefabFitnessUseCase83\\": [
+        "src/",
+        "test-fab/"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
