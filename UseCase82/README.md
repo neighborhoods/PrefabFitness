@@ -9,7 +9,6 @@ You can force an error, like removing the last line of http-buildable-directorie
 #### Getting Started
 1. Navigate to the root of UseCase82 on your terminal
 2. Run `composer install` to install the project dependencies
-3. Run `./expose-nhds-tld`. This allows us to make local requests to the `nhds` top level domain in the test request below.
 4. Run `docker-compose build && docker-compose up -d` to build and start the Nginx, Postgres, Redis, and PHP containers
 5. Run `docker-compose exec prefab_fitness ./bin/database_setup.sh` to create the prefab_fitness database, run migrations, and seed the database with mock data
 6. Run `./vendor/bin/prefab` to run Prefab and generate the Listing HTTP endpoint
@@ -18,11 +17,13 @@ You can force an error, like removing the last line of http-buildable-directorie
 Your project is now ready! Notice you now have a `fab/` directory with `Listing` machinery under `fab/MV1` and general HTTP machinery under `fab/Prefab5`. You can now query your database over HTTP using 
 [Search Criteria](https://github.com/neighborhoods/Prefab/blob/8.x/README.md#search-criteria). 
 
-This project is configured to listen for requests to `use_case_82.local.nhds`. Here is an example cURL request to get all listings with an `id` less than 20:
+This project is configured to listen for requests to port 80 on your docker host. On Mac and Linux the docker host is often `localhost`, but you may need to place a specific IP if docker is run on a VM. 
+
+Here is an example cURL request to get all listings with an `id` less than 20:
 
 ```
 curl -g -X GET \
-   'http://use_case_82.local.nhds/v1/listing/?searchCriteria[filters][0][glue]=and&searchCriteria[filters][0][field]=id&searchCriteria[filters][0][condition]=lt&searchCriteria[filters][0][values][0]=20'
+   'http://localhost/v1/listing/?searchCriteria[filters][0][glue]=and&searchCriteria[filters][0][field]=id&searchCriteria[filters][0][condition]=lt&searchCriteria[filters][0][values][0]=20'
 ```
 
 You can prime the containers before making the first http request.

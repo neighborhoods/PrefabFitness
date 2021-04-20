@@ -23,8 +23,6 @@ services:
         - COMPOSER_INSTALL=false
       volumes_from:
       - applications
-      expose:
-      - "9095"
       environment:
           SITE_ENVIRONMENT: Local
           DEBUG_MODE: "true"
@@ -37,9 +35,6 @@ services:
           REDIS_HOST: redis
           REDIS_PORT: 6379
           PHP_IDE_CONFIG: serverName=prefab_fitness.neighborhoods.com
-#      extra_hosts:
-#      - "dockerhost:10.200.10.1"
-#      dns: 10.200.10.1
 
 ### nginx Container #######################################
 
@@ -58,9 +53,6 @@ services:
             - "443:443"
         links:
             - prefab_fitness
-#        extra_hosts:
-#            - "dockerhost:10.200.10.1"
-#        dns: 10.200.10.1
 
 ### PostgreSQL PostGis Container ############################
 
@@ -85,16 +77,6 @@ services:
             - redis:/data
         ports:
             - "6379:6379"
-
-### DNS Setup ###############################################
-
-#    dnsmasq:
-#        build: ./docker/dnsmasq
-#        ports:
-#            - "53:53/udp"
-#            - "53:53"
-#        cap_add:
-#            - NET_ADMIN
 
 ### Volumes Setup ###########################################
 
