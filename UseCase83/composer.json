@@ -12,7 +12,7 @@
     }
   },
   "require": {
-    "neighborhoods/prefab": "PREF-279-dev"
+    "neighborhoods/prefab": "8.*"
   },
   "autoload": {
     "psr-4": {
@@ -30,6 +30,5 @@
       ]
     }
   },
-  "minimum-stability": "dev",
   "prefer-stable": true
 }
