@@ -13,8 +13,18 @@
   },
   "require": {
     "fzaninotto/faker": "^1.8",
-    "neighborhoods/prefab": "8.x-dev",
+    "neighborhoods/prefab": "8.*",
+    "doctrine/dbal": "2.12.*",
     "robmorgan/phinx": "^0.11.1"
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "@composer dump-autoload -a"
+    ],
+    "post-install-cmd": [
+      "vendor/bin/prefab",
+      "@composer dump-autoload -a"
+    ]
   },
   "autoload": {
     "psr-4": {
@@ -32,6 +42,5 @@
       ]
     }
   },
-  "minimum-stability": "dev",
   "prefer-stable": true
 }

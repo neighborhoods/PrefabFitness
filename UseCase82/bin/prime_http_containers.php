@@ -4,7 +4,7 @@ declare(strict_types=1);
 error_reporting(E_ALL);
 
 require_once __DIR__ . '/../vendor/autoload.php';
-use Neighborhoods\PrefabFitnessUseCase81\Prefab5\HTTPBuildableDirectoryMap\ContainerBuilder;
+use Neighborhoods\PrefabFitnessUseCase82\Prefab5\HTTPBuildableDirectoryMap\ContainerBuilder;
 
 $primer = new ContainerBuilder\Primer();
 $primer->primeContainers();
