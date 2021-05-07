@@ -1,0 +1,93 @@
+version: '2'
+
+services:
+
+### Mount Applications ######################################
+
+    applications:
+        image: tianon/true
+        volumes:
+            - .:/var/www/html/prefabfitness/use_case_84.neighborhoods.com
+    pgsql_data:
+      image: tianon/true
+      volumes:
+          - ./docker/data/pgsql:/docker-entrypoint-initdb.d
+
+### Prefab Fitness Container (php-fpm) #########################
+
+    prefab_fitness:
+      build:
+        context: .
+        args:
+        - INSTALL_XDEBUG=true
+        - COMPOSER_INSTALL=false
+      volumes_from:
+      - applications
+      environment:
+          SITE_ENVIRONMENT: Local
+          DATABASE_ADAPTER: pgsql
+          DATABASE_HOST: pgsql
+          DATABASE_USERNAME: nhds
+          DATABASE_PASSWORD: nhds2016
+          DATABASE_NAME: prefab_fitness
+          DATABASE_PORT: 5432
+          REDIS_HOST: redis
+          REDIS_PORT: 6379
+          DEBUG_MODE: "true"
+          PHP_IDE_CONFIG: serverName=prefab_fitness.neighborhoods.com
+
+### nginx Container #######################################
+
+    nginx:
+        build:
+            context: ./docker/nginx
+        volumes_from:
+            - applications
+        volumes:
+            - ./docker/nginx/logs/:/var/log/nginx
+            - ./docker/nginx/sites/:/etc/nginx/sites-available
+            - ./docker/nginx/conf.d/:/etc/nginx/conf.d
+            - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+        ports:
+            - "80:80"
+            - "443:443"
+        links:
+            - prefab_fitness
+
+### PostgreSQL PostGis Container ############################
+
+    pgsql:
+        build: ./docker/postgres
+        volumes:
+            - postgres:/var/lib/postgresql/data
+        volumes_from:
+            - pgsql_data
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_DB: nhds
+            POSTGRES_USER: nhds
+            POSTGRES_PASSWORD: nhds2016
+
+### Redis Container #########################################
+
+    redis:
+        build: ./docker/redis
+        volumes:
+            - redis:/data
+        ports:
+            - "6379:6379"
+
+### Volumes Setup ###########################################
+
+volumes:
+    postgres:
+        driver: "local"
+    redis:
+        driver: "local"
+
+### Network Setup ###########################################
+
+networks:
+  default:
+    driver: bridge
