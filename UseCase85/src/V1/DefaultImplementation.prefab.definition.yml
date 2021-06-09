@@ -1,0 +1,7 @@
+name: Default
+table_name: default
+actor_group: collection
+properties:
+  id:
+    data_type: int
+    record_key: id
