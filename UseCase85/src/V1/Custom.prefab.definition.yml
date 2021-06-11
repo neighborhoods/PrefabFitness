@@ -1,0 +1,8 @@
+name: Custom
+table_name: custom
+actor_group: collection
+json_serialize_map_as_array: true
+properties:
+  id:
+    data_type: int
+    record_key: id
