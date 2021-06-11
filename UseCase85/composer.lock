@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21a6fce418f702e6aec22682c1e185c1",
+    "content-hash": "9a25037c841ff26752c51b135c72517c",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -1991,16 +1991,16 @@
         },
         {
             "name": "neighborhoods/prefab",
-            "version": "dev-PREF-289",
+            "version": "8.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neighborhoods/Prefab.git",
-                "reference": "938d84d9319ba4e47b170d7bb7ca099e83a2a4a4"
+                "reference": "256d86bdc35e2e6b511e19778743d97704974e90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neighborhoods/Prefab/zipball/938d84d9319ba4e47b170d7bb7ca099e83a2a4a4",
-                "reference": "938d84d9319ba4e47b170d7bb7ca099e83a2a4a4",
+                "url": "https://api.github.com/repos/neighborhoods/Prefab/zipball/256d86bdc35e2e6b511e19778743d97704974e90",
+                "reference": "256d86bdc35e2e6b511e19778743d97704974e90",
                 "shasum": ""
             },
             "require": {
@@ -2019,7 +2019,7 @@
                 "neighborhoods/buphalo": "^1.0",
                 "neighborhoods/datadog-component": "^1.0",
                 "neighborhoods/dependency-injection-container-builder": "^1.0",
-                "php": "^7.3",
+                "php": "^7.3|^8.0",
                 "symfony/config": "^4.4",
                 "symfony/console": "^4.4",
                 "symfony/dependency-injection": "^4.4",
@@ -2059,7 +2059,7 @@
                 }
             ],
             "description": "Neighborhoods Prefab builds Protean machinery.",
-            "time": "2021-06-10T08:36:35+00:00"
+            "time": "2021-06-10T15:04:28+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -3928,9 +3928,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "neighborhoods/prefab": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

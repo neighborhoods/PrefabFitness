@@ -11,7 +11,7 @@
   "require": {
     "php": "^7.4",
     "ext-json": "*",
-    "neighborhoods/prefab": "dev-PREF-289"
+    "neighborhoods/prefab": "^8.5"
   },
   "scripts": {
     "post-update-cmd": [
