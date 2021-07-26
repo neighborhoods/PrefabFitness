@@ -8,13 +8,12 @@
   "config": {
     "sort-packages": true,
     "platform": {
-      "php": "7.4"
+      "php": "8.0"
     }
   },
   "require": {
-    "fzaninotto/faker": "^1.8",
-    "neighborhoods/prefab": "8.*",
     "doctrine/dbal": "2.12.*",
+    "neighborhoods/prefab": "dev-php8",
     "robmorgan/phinx": "^0.11.1"
   },
   "scripts": {
