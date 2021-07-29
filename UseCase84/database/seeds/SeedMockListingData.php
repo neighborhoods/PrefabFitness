@@ -23,24 +23,23 @@ class SeedMockListingData extends AbstractSeed
 
     public function run()
     {
-        $faker = Faker\Factory::create();
         $data = [];
 
         for ($i = 0; $i < 5000; $i++)
         {
             $data[] = [
-                self::COLUMN_STREET_ADDRESS => $faker->streetAddress,
-                self::COLUMN_CITY => $faker->city,
-                self::COLUMN_STATE => $faker->state,
-                self::COLUMN_POSTAL_CODE => $faker->postcode,
-                self::COLUMN_LATITUDE => $faker->latitude,
-                self::COLUMN_LONGITUDE => $faker->longitude,
-                self::COLUMN_BEDROOMS => $faker->numberBetween(0, 5),
-                self::COLUMN_BATHROOMS => $faker->numberBetween(1, 3),
-                self::COLUMN_LIST_PRICE => $faker->numberBetween(100000, 1000000),
-                self::COLUMN_YEAR_BUILT => $faker->numberBetween(1970, 2019),
-                self::COLUMN_SQ_FT => $faker->numberBetween(700, 4000),
-                self::COLUMN_PARKING_SPACES => $faker->numberBetween(0, 5),
+                self::COLUMN_STREET_ADDRESS => 'street' . $i,
+                self::COLUMN_CITY => 'city' . $i,
+                self::COLUMN_STATE => 'state' . $i,
+                self::COLUMN_POSTAL_CODE => 'postcode' . $i,
+                self::COLUMN_LATITUDE => $i % 180 - 90,
+                self::COLUMN_LONGITUDE => $i/180,
+                self::COLUMN_BEDROOMS => $i % 4 + 1,
+                self::COLUMN_BATHROOMS => $i % 3 + 1,
+                self::COLUMN_LIST_PRICE => $i + 100000,
+                self::COLUMN_YEAR_BUILT => $i % 50 + 1970,
+                self::COLUMN_SQ_FT => $i % 3000 + 700,
+                self::COLUMN_PARKING_SPACES => $i % 6,
             ];
 
             if ($i % 500 === 0) {
