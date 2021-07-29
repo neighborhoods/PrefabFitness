@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d2f49d76b095265b8131b550bb9b2ae",
+    "content-hash": "f2ec7e6ede8ecca85eb222476d542abf",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -2605,16 +2605,16 @@
         },
         {
             "name": "neighborhoods/prefab",
-            "version": "dev-php8",
+            "version": "8.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neighborhoods/Prefab.git",
-                "reference": "084aebdbdedbdf3b6a46d8e179c7bf62d877fc65"
+                "reference": "73703839302405d5be3b3e6fd149788abec79f15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neighborhoods/Prefab/zipball/084aebdbdedbdf3b6a46d8e179c7bf62d877fc65",
-                "reference": "084aebdbdedbdf3b6a46d8e179c7bf62d877fc65",
+                "url": "https://api.github.com/repos/neighborhoods/Prefab/zipball/73703839302405d5be3b3e6fd149788abec79f15",
+                "reference": "73703839302405d5be3b3e6fd149788abec79f15",
                 "shasum": ""
             },
             "require": {
@@ -2675,9 +2675,9 @@
             "description": "Neighborhoods Prefab builds Protean machinery.",
             "support": {
                 "issues": "https://github.com/neighborhoods/Prefab/issues",
-                "source": "https://github.com/neighborhoods/Prefab/tree/php8"
+                "source": "https://github.com/neighborhoods/Prefab/tree/8.8.2"
             },
-            "time": "2021-07-19T17:35:46+00:00"
+            "time": "2021-07-29T20:18:29+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -4839,9 +4839,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "neighborhoods/prefab": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
