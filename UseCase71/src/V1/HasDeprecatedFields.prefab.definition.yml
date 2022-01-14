@@ -1,0 +1,19 @@
+name: Listing
+table_name: unused
+identity_field: id
+supporting_actor_group: minimal
+properties:
+  id:
+    data_type: int
+    record_key: id
+    nullable: false
+  deprecated_field:
+    data_type: bool
+    record_key: deprecated_field
+    nullable: true
+    deprecated: true
+    deprecated_message: 'in favor of replacement_field'
+  replacement_field:
+    data_type: string
+    record_key: deprecated_field
+    nullable: true
