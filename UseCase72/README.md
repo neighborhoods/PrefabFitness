@@ -1,2 +1,2 @@
-# Use Case 71
-Testing whether or not the Deprecated flag works
+# Use Case 72
+Testing fallback to property name when record_key is not specified
