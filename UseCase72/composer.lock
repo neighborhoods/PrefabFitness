@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea360c1df7f7fed92915f613bcd0b0d1",
+    "content-hash": "e30e15aa5cc4e82bdf4caa2419549912",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -1931,16 +1931,16 @@
         },
         {
             "name": "neighborhoods/prefab",
-            "version": "dev-PREF-247-7x-default-record-key-to-name",
+            "version": "7.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neighborhoods/Prefab.git",
-                "reference": "3ac2b5746edce3239e4fba879c980d82f9c76ac9"
+                "reference": "d2e1842e4a85681265f2cf12e52ec82b913d3235"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neighborhoods/Prefab/zipball/3ac2b5746edce3239e4fba879c980d82f9c76ac9",
-                "reference": "3ac2b5746edce3239e4fba879c980d82f9c76ac9",
+                "url": "https://api.github.com/repos/neighborhoods/Prefab/zipball/d2e1842e4a85681265f2cf12e52ec82b913d3235",
+                "reference": "d2e1842e4a85681265f2cf12e52ec82b913d3235",
                 "shasum": ""
             },
             "require": {
@@ -1998,7 +1998,7 @@
                 }
             ],
             "description": "Neighborhoods Prefab builds Protean machinery.",
-            "time": "2022-01-17T17:14:28+00:00"
+            "time": "2022-01-20T17:08:42+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -3925,9 +3925,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "neighborhoods/prefab": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
