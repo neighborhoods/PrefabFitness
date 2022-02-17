@@ -1,0 +1,16 @@
+name: Listing
+table_name: unused
+identity_field: same_as_default
+supporting_actor_group: minimal
+properties:
+  same_as_default:
+    data_type: int
+    record_key: same_as_default
+    nullable: false
+  uses_default:
+    data_type: bool
+    nullable: false
+  different_than_default:
+    data_type: string
+    record_key: something_else
+    nullable: false
