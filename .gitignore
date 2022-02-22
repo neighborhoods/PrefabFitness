@@ -1,1 +1,10 @@
 .idea
+config/
+data/
+public/
+vendor/
+fab/
+test-fab/
+logs/
+Logs/
+phpcs.xml.dist
