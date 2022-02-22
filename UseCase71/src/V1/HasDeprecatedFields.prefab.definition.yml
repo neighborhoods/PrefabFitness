@@ -31,7 +31,7 @@ properties:
     deprecated_message: 'to prove this works'
   deprecated_without_message:
     data_type: bool
-    record_key: deprecated_without_reason
+    record_key: deprecated_without_message
     nullable: true
     is_deprecated: true
     replacement: id
