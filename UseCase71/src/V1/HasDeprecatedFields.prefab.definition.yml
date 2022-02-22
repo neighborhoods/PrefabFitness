@@ -11,7 +11,7 @@ properties:
     data_type: bool
     record_key: deprecated_field
     nullable: true
-    deprecated: true
+    is_deprecated: true
     deprecated_message: 'in favor of replacement_field'
     replacement: 'replacement_field'
   replacement_field:
