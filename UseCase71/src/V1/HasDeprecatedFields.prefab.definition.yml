@@ -13,6 +13,7 @@ properties:
     nullable: true
     deprecated: true
     deprecated_message: 'in favor of replacement_field'
+    replacement: 'replacement_field'
   replacement_field:
     data_type: string
     record_key: deprecated_field
