@@ -23,6 +23,13 @@ properties:
     record_key: deprecated_simply
     nullable: true
     is_deprecated: true
+  deprecated_with_null_details:
+    data_type: bool
+    record_key: deprecated_with_null_details
+    nullable: true
+    is_deprecated: true
+    deprecated_message: null
+    replacement: null
   deprecated_without_replacement:
     data_type: bool
     record_key: deprecated_without_replacement
