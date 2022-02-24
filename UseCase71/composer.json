@@ -12,7 +12,7 @@
     }
   },
   "require": {
-    "neighborhoods/prefab": "dev-PREF-314-7x-deprecated-flag"
+    "neighborhoods/prefab": "7.2.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
