@@ -1,0 +1,44 @@
+name: Listing
+table_name: unused
+identity_field: id
+supporting_actor_group: minimal
+properties:
+  id:
+    data_type: int
+    record_key: id
+    nullable: false
+  deprecated_field:
+    data_type: bool
+    record_key: deprecated_field
+    nullable: true
+    is_deprecated: true
+    deprecated_message: 'in favor of replacement_field'
+    replacement: replacement_field
+  replacement_field:
+    data_type: string
+    record_key: deprecated_field
+    nullable: true
+  deprecated_simply:
+    data_type: bool
+    record_key: deprecated_simply
+    nullable: true
+    is_deprecated: true
+  deprecated_with_null_details:
+    data_type: bool
+    record_key: deprecated_with_null_details
+    nullable: true
+    is_deprecated: true
+    deprecated_message: null
+    replacement: null
+  deprecated_without_replacement:
+    data_type: bool
+    record_key: deprecated_without_replacement
+    nullable: true
+    is_deprecated: true
+    deprecated_message: 'to prove this works'
+  deprecated_without_message:
+    data_type: bool
+    record_key: deprecated_without_message
+    nullable: true
+    is_deprecated: true
+    replacement: id
